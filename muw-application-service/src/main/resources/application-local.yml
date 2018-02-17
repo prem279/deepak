@@ -1,0 +1,173 @@
+spring:
+  jpa:
+    show-sql: true
+    database: H2
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level: 
+    ROOT: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate: TRACE
+    org.hibernate.type: ALL
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: https://test-lmidp.libertymutual.com/idp/userinfo.openid
+  config:
+    service-id: ci_lmbc_empr_muw_ui
+    service-password: ENC(84B206005F3F40FCE781F00CC98E285B)
+    user-search-base: uid={0},ou=People,o=Liberty,o=Intranet
+    ssid-search-base: uid={0},ou=People,o=Applications,o=Intranet
+    group-search-base: cn=Products,ou=Groups,o=Liberty,o=intranet
+    ldap-url: ldaps://ldapsintdev-01.lmig.com:636
+    application-read-access-groups:
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_SALES
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+    application-create-access-groups:
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+    application-update-access-groups:
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+    applicant-read-access-groups:
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+    applicant-create-access-groups:
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+    applicant-update-access-groups:
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+    employer-read-access-groups:
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+    application-event-access-groups: 
+      - CI_LMBC_EMPR_MUW_APPLN_EVT
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+      - CI_LMBC_EMPR_MUW_TEST
+      
+h2:
+  tcp:
+    enabled: true
+  web:
+    enabled: true    
+
+datasource:
+  app:
+    url: jdbc:h2:mem:application_lcl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:db/h2/init/h2_setup.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  flyway:
+    url: jdbc:h2:mem:application_lcl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:db/h2/init/h2_setup.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+flyway:
+  locations: classpath:db/migration/versioned,db/migration/repeatable,db/h2/post_create
+  placeholders:
+    BIGSTRING: VARCHAR2
+    DATETIME: TIMESTAMP
+    NUMBER11_2: NUMBER(11,2)
+    NUMBER5_2: NUMBER(5,2)
+    SMALLINT: SMALLINT
+    NUMBER3: NUMBER(3)
+    NUMBER5: NUMBER(5)
+    NUMBER10: NUMBER(10)
+    SETSCHEMA: SET SCHEMA
+    IDENTITY_1_1: AUTO_INCREMENT
+    IDENTITY_APPLN_1_1: DEFAULT MUW_APPLN_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLN_APPLNT: DEFAULT MUW_APPLN_APPLNT_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLN_PROD_1_1: DEFAULT MUW_APPLN_PROD_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLN_APPLNT_PROD_1_1: DEFAULT MUW_APPLN_APPLNT_PROD_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLNT_COND_1_1: DEFAULT MUW_APPLNT_COND_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLNT_MDCT_1_1: DEFAULT MUW_APPLNT_MDCT_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLN_MEDL_QUALG_FC_1_1: DEFAULT MUW_APPLN_MEDL_QUALG_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLN_EVENT_1_1: DEFAULT APPLN_EVENT_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_QUES_RES_1_1: DEFAULT applnt_quesn_rspn_seq.NEXTVAL PRIMARY KEY
+    NUMBER19: BIGINT
+    APPLICATION_PK: 
+    APPLICATION_PROD_PK:
+    APPLN_APPLNT_PROD_PK:
+    APPLICANT_COND_PK:
+    APPLICANT_MDCT_PK:
+    APPLN_APPLNT_PK:
+    APPLN_MEDL_QUALG_FC_PK: 
+    APPLN_EVENT_PK:
+    QUESTION_RESPONSE_PK:  
+    iforacle: --
+    ifh2: 
+
+service:
+  employeeServiceZuulUrl: http://localhost:9011/services/v1/
+  employerServiceZuulUrl: http://localhost:9001/services/v1/
+  muwServiceId: ci_lmbc_empr_muw_ui
+  muwServicePassword: ENC(84B206005F3F40FCE781F00CC98E285B)
+      

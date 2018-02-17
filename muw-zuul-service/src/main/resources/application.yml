@@ -1,0 +1,111 @@
+spring:
+  application:
+    name: muw_zuul_svc
+  aop:
+    proxy-target-class: true
+    
+info:
+  app:
+    name: ${spring.application.name}
+    description: This is the MUW Zuul Service
+    version: 1.0.0
+    
+security:
+  config:
+    service-id: ci_lmbc_empr_muw_ui
+    service-password:
+    
+server:
+  port: ${port:8443}
+  
+endpoints:
+  info:
+    sensitive: false
+  health:
+    sensitive: false
+  trace:
+    sensitive: false
+    
+management:
+  context-path: /manage
+  
+zuul:
+  host:
+    socket-timeout-millis: 45000
+    connect-timeout-millis: 45000
+  routes:
+    muwui:
+      path: /muwui/**
+    node_modules:
+      path: /node_modules/**
+      url: ${zuul.routes.muwui.url}/node_modules
+    css:
+      path: /css/**
+      url: ${zuul.routes.muwui.url}/css
+    js:
+      path: /js/**
+      url: ${zuul.routes.muwui.url}/js
+    app:
+      path: /app/**
+      url: ${zuul.routes.muwui.url}/app
+    assets:
+      path: /assets/**
+      url: ${zuul.routes.muwui.url}/assets
+    fonts:
+      path: /fonts/**
+      url: ${zuul.routes.muwui.url}/fonts
+    browser-sync:
+      path: /browser-sync/**
+      url: ${zuul.routes.muwui.url}/browser-sync
+    muwemployer:
+      serviceId: muw_employer_svc
+      path: /muwemployer/**
+    muwemployee:
+      serviceId: muw_employee_svc
+      path: /muwemployee/**
+    muwapplication:
+      serviceId: muw_application_svc
+      path: /muwapplication/**
+    muwcontact:
+      serviceId: muw_contact_svc
+      path: /muwcontact/**
+    muwquestions:
+      serviceId: muw_questions_svc
+      path: /muwquestions/**
+    muwdocument:
+      serviceId: muw_document_svc
+      path: /muwdocument/**
+    muwmedicalrules:
+      serviceId: muw_medical_rules_svc
+      path: /muwmedicalrules/**  
+    muwprocess:
+      serviceId: muw_process_svc
+      path: /muwprocess/**  
+      
+hystrix:
+  command:
+      default:
+          execution:
+              isolation:
+                  thread:
+                      timeoutInMilliseconds: 60000
+ribbon:
+  readTimeout: 30000
+    
+eureka:
+  instance:
+    protocol: ${muw_proxy_protocol:http}
+    hostname: ${muw_proxy_hostname:localhost}
+    nonSecurePortEnabled: ${muw_proxy_non-secure-port-enabled:true}
+    nonSecurePort: ${muw_proxy_non-secure-port:8090}
+    securePortEnabled: ${muw_proxy_secure-port-enabled:false}
+    securePort: ${muw_proxy_secure-port:443}
+    secure-health-check-url: ${muw_proxy_protocol:http}://${eureka.instance.hostname}:${muw_proxy_port:8090}${management.context-path}/health
+    status-page-url: ${muw_proxy_protocol:http}://${eureka.instance.hostname}:${muw_proxy_port:8090}${management.context-path}/info
+  client:
+    serviceUrl:
+      defaultZone: ${lmb_discovery_protocol:http}://${lmb_discovery_host:localhost}:${lmb_discovery_port:8761}/eureka/
+    initialInstanceInfoReplicationIntervalSeconds: 5
+
+fiddler:
+  trace-java: false

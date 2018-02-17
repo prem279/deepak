@@ -1,0 +1,29 @@
+---
+applications:
+- name: ${inject.cf.name}
+  routes:
+  - route: ${inject.cf.name}.${inject.cf.domain}
+  instances: ${inject.cf.instances}
+  memory: ${inject.cf.mem}
+  buildpack: java_3_8_1
+  timeout: 180
+  env:
+    JAVA_OPTS: ${inject.cf.env.javaopts}
+    NEW_RELIC_APP_NAME: ${inject.deploy.newrelic.name}
+    
+    muw_employee_protocol: https
+    muw_employee_hostname: ${inject.cf.env.muwemployee.hostname}
+    muw_employee_port: ${inject.cf.env.muwemployee.port}
+    muw_employee_non-secure-port-enabled: false
+    muw_employee_non-secure-port: 9011
+    muw_employee_secure-port-enabled: true
+    muw_employee_secure-port: 443
+    
+    lmb_discovery_protocol: https
+    lmb_discovery_host: ${inject.cf.env.lmbdiscovery.host}
+    lmb_discovery_port: 443
+    
+  services:
+  - ${inject.cf.keyservice}
+  - logging
+  - newrelic

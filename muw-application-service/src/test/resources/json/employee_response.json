@@ -1,0 +1,55 @@
+{
+    "employerEmployeeId": 212,
+    "employerId": 2,
+    "employeeSsn": "987654321",
+    "previousLastName": null,
+    "annualEarningsAmount": null,
+    "employeeClassCode": null,
+    "employeeIdentificationNumber": null,
+    "hireDate": "2016-12-12",
+    "jobTitleName": null,
+    "communicationMethodCode": "EML",
+    "concurrencyQuantity": 0,
+    "firstName": "DEEPAK",
+    "lastName": "ragam",
+    "middleInitial": null,
+    "createUserIdNumber": "ci_lmbc_empr_muw_ui",
+    "lastUpdatedUserIdNumber": null,
+    "reportingLocationNumber": null,
+    "mailingAddressSame": false,
+    "employeeHomeAddress": {
+      "addressId": 1469,
+      "addressReasCode": "HOME",
+      "addressLine1Text": "999 Main Street",
+      "addressLine2Text": null,
+      "cityName": "Dover",
+      "stateProvinceCode": "NH",
+      "postalCode": "12345",
+      "countryCode": "USA"
+    },
+    "employeeMailingAddress": {
+      "addressId": 1470,
+      "addressReasCode": "MAILG",
+      "addressLine1Text": "22222 Main Street",
+      "addressLine2Text": null,
+      "cityName": "Dover",
+      "stateProvinceCode": "NH",
+      "postalCode": "12345",
+      "countryCode": "USA"
+    },
+    "employeeEmailAddress": {
+      "partyEmailAddressId": null,
+      "electronicAddressReasonCode": null,
+      "electronicAddressText": null
+    },
+    "employeeTelephone": {
+      "partyPhoneNumberId": null,
+      "countryCode": null,
+      "phoneNumber": null,
+      "extension": null,
+      "phoneNumberType": null,
+      "timeZone": null
+    },
+    "createDatetime": "2017-05-23 14:18:44.568",
+    "lastUpdateDatetime": null
+}

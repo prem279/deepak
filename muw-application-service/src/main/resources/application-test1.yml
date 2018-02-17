@@ -1,0 +1,156 @@
+spring:
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    hibernate:
+      ddl-auto: none
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: https://test-lmidp.libertymutual.com/idp/userinfo.openid
+  config:
+    service-id: ci_lmbc_empr_muw_ui
+    service-password: ENC(CA11CC9C1A560E0C18A817F321C4999D)
+    user-search-base: uid={0},ou=People,o=Liberty,o=Intranet
+    ssid-search-base: uid={0},ou=People,o=Applications,o=Intranet
+    group-search-base: cn=Products,ou=Groups,o=Liberty,o=intranet
+    ldap-url: ldaps://ldapsinttst-01.lmig.com:636
+    application-read-access-groups:
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_SALES
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMBC_EMPR_MUW_TEST
+    application-create-access-groups:
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_TEST
+    application-update-access-groups:
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMBC_EMPR_MUW_TEST
+    applicant-read-access-groups:
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMBC_EMPR_MUW_TEST
+    applicant-create-access-groups:
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_TEST
+    applicant-update-access-groups:
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED  
+      - CI_LMBC_EMPR_MUW_TEST
+    employer-read-access-groups:
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED 
+      - CI_LMBC_EMPR_MUW_TEST
+    application-event-access-groups: 
+      - CI_LMBC_EMPR_MUW_APPLN_EVT
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+      - CI_LMBC_EMPR_MUW_TEST
+      
+logging:
+  level: 
+    ROOT: INFO
+    org.springframework.security: WARN
+    org.hibernate: WARN
+    org.hibernate.type: WARN  
+
+datasource:
+  app:
+    url: jdbc:oracle:thin:@vxpit-c5lb0002.lmig.com:1528:clb0p02t
+    username: MUWAPPLNSVCAP
+    password: ENC(D3EAC98AD2116751C6AB7A03A5A536F0)
+    driver-class-name: oracle.jdbc.OracleDriver
+  flyway:
+    url: jdbc:oracle:thin:@vxpit-c5lb0002.lmig.com:1528:clb0p02t
+    username: MUWAPPLN_DB
+    password: ENC(8B8698F7B2AA91F7868E901F59306C62)
+    driver-class-name: oracle.jdbc.OracleDriver
+
+flyway:
+  locations: classpath:db/migration/versioned,db/migration/repeatable
+  placeholders:
+    BIGSTRING: VARCHAR2
+    DATETIME: TIMESTAMP
+    NUMBER11_2: NUMBER(11,2)
+    NUMBER5_2: NUMBER(5,2)
+    SMALLINT: SMALLINT
+    NUMBER3: NUMBER(3)
+    NUMBER5: NUMBER(5)
+    NUMBER10: NUMBER(10)
+    SETSCHEMA: ALTER SESSION SET CURRENT_SCHEMA =
+    IDENTITY_1_1: GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1)
+    IDENTITY_APPLN_1_1: 
+    IDENTITY_APPLN_APPLNT: 
+    IDENTITY_APPLN_PROD_1_1: 
+    IDENTITY_APPLN_APPLNT_PROD_1_1:
+    IDENTITY_APPLNT_COND_1_1:
+    IDENTITY_APPLNT_MDCT_1_1:
+    IDENTITY_APPLN_MEDL_QUALG_FC_1_1:
+    IDENTITY_APPLN_EVENT_1_1: 
+    IDENTITY_QUES_RES_1_1:
+    NUMBER19: NUMBER(19)
+    APPLICATION_PK: ALTER TABLE muw_appln_t ADD CONSTRAINT pk_muw_appln_t PRIMARY KEY(appln_id);
+    APPLN_APPLNT_PK: ALTER TABLE muw_appln_applnt_t ADD CONSTRAINT pk_muw_appln_applnt_t PRIMARY KEY(appln_applnt_id);
+    APPLICATION_PROD_PK: ALTER TABLE muw_appln_prod_t ADD CONSTRAINT pk_muw_appln_prod_t PRIMARY KEY(appln_prod_id);
+    APPLN_APPLNT_PROD_PK: ALTER TABLE muw_appln_applnt_prod_t ADD CONSTRAINT pk_muw_appln_applnt_prod_t PRIMARY KEY(appln_applnt_prod_id);
+    APPLICANT_COND_PK: ALTER TABLE muw_applnt_cond_t ADD CONSTRAINT pk_muw_applnt_cond_t PRIMARY KEY(applnt_cond_id);
+    APPLICANT_MDCT_PK: ALTER TABLE muw_applnt_mdct_t ADD CONSTRAINT pk_muw_applnt_mdct_t PRIMARY KEY(applnt_mdct_id);
+    APPLN_MEDL_QUALG_FC_PK: ALTER TABLE muw_appln_medl_qualg_fc_t ADD CONSTRAINT pk_muw_appln_medl_qualg_fc_t PRIMARY KEY(appln_medl_qualg_fc_id);
+    APPLN_EVENT_PK: ALTER TABLE appln_event_t ADD CONSTRAINT pk_appln_event_t PRIMARY KEY(event_id);
+    QUESTION_RESPONSE_PK: ALTER TABLE APPLN_APPLNT_QUESN_RSPN_T ADD CONSTRAINT pk_applnt_quesn_rspn_t PRIMARY KEY(applnt_quesn_rspn_id);
+    
+service:
+  employeeServiceZuulUrl: https://test1-lmbc-empr-muw-employee-service.pdc.np.paas.lmig.com/services/v1/
+  employerServiceZuulUrl: https://test1-lmbc-empr-muw-account-service.pdc.np.paas.lmig.com/services/v1/
+  muwServiceId: ci_lmbc_empr_muw_ui
+  muwServicePassword: ENC(CA11CC9C1A560E0C18A817F321C4999D)

@@ -1,0 +1,111 @@
+spring:
+  jpa:
+    show-sql: true
+    database: H2
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+logging:
+  level: 
+    ROOT: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate: TRACE
+    org.hibernate.type: TRACE
+    
+security:
+  oauth2:
+    resource:
+      userInfoUri: https://test-lmidp.libertymutual.com/idp/userinfo.openid
+  config: 
+    service-id: ci_lmbc_empr_muw_ui
+    service-password: ENC(2333071ED5C9E5E569696B180DB088D1)
+    user-search-base: uid={0},ou=People,o=Liberty,o=Intranet
+    ssid-search-base: uid={0},ou=People,o=Applications,o=Intranet
+    group-search-base: cn=Products,ou=Groups,o=Liberty,o=intranet
+    ldap-url: ldaps://ldapsintdev-01.lmig.com:636
+    read-access-groups:
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_SALES
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+      - CI_LMBC_EMPR_MUW_ACCT
+      - CI_LMBC_EMPR_MUW_TEST
+    read-write-access-groups:
+      - CI_LMBC_EMPR_MUW_SALES
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+      - CI_LMBC_EMPR_MUW_ACCT
+      - CI_LMBC_EMPR_MUW_TEST
+    read-access-event-groups:
+      - CI_LMBC_EMPR_RPT_MUW
+      - CI_LMBC_EMPR_MUW_EMPLOYER_EVT
+      - CI_LMBC_EMPR_MUW_TEST
+      - CI_LMBC_EMPR_DEVELOPER
+    
+h2:
+  tcp:
+    enabled: true
+  web:
+    enabled: true    
+
+datasource:
+  app:
+    url: jdbc:h2:mem:account_lcl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:db/h2/init/h2_setup.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  flyway:
+    url: jdbc:h2:mem:account_lcl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:db/h2/init/h2_setup.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+flyway:
+  locations: classpath:db/migration/versioned,db/migration/repeatable,db/h2/post_create
+  placeholders:
+    BIGSTRING: VARCHAR2
+    DATETIME: TIMESTAMP
+    NUMBER11_2: NUMBER(11,2)
+    NUMBER5: NUMBER(5)
+    NUMBER10: NUMBER(10)
+    SETSCHEMA: SET SCHEMA
+    IDENTITY_1_1: AUTO_INCREMENT
+    IDENTITY_EMPLR_1_1: DEFAULT MUW_EMPLR_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_PREF_1_1: DEFAULT MUW_PREF_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_EOIPROD_1_1: DEFAULT MUW_EOIPROD_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_EMPLR_EVNT_1_1: DEFAULT MUW_EMPLR_EVNT_SEQ.NEXTVAL PRIMARY KEY
+    NUMBER19: BIGINT
+    EMPLOYER_PK:
+    LABEL_TXT_PK: ALTER TABLE lbl_txt_t ADD CONSTRAINT pk_lbl_txt_t PRIMARY KEY(lbl_id);
+    PROD_LBL_PK: ALTER TABLE prod_lbl_t ADD CONSTRAINT pk_prod_lbl_t PRIMARY KEY(prod_id, lbl_id);
+    PREF_LBL_PK: ALTER TABLE pref_lbl_t ADD CONSTRAINT pk_pref_lbl_t PRIMARY KEY(emplr_prefcs_id, pref_type, lbl_id);
+    EMPLOYER_EVENT_PK:
+    iforacle: --
+    ifjunit: 
+    H2IGNORELINE: --
+    ORACLEIGNORELINE:
+    
+service:
+  contactServiceUrl: http://localhost:8089/services/v1/
+  contactServiceId: ci_lmbc_empr_muw_ui
+  contactServicePassword: ENC(2333071ED5C9E5E569696B180DB088D1) 
+  valid-values-url: http://localhost:8084

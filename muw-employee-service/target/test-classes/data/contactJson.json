@@ -1,0 +1,138 @@
+{
+  "party": {
+    "partyId": 1,
+    "partyType": "PRSN",
+    "organisationName": "Liberty",
+    "organisationType": "CORP",
+    "namePrefix": "MR",
+    "firstName": "Gurmeet",
+    "middleName": "Singh",
+    "lastName": "Gulati",
+    "nameSuffix": "SR",
+    "partyRoles": [
+      {
+        "partyRoleId": 1,
+        "roleType": "24"
+      },
+      {
+        "partyRoleId": 2,
+        "roleType": "100"
+      }
+    ],
+    "partyPhoneNumbers": [
+      {
+        "partyPhoneNumberId": 1,
+        "voiceIndicator": "Y",
+        "textIndicator": "Y",
+        "countryCode": "011",
+        "phoneNumber": "0745566546",
+        "extension": "4543",
+        "phoneNumberType": "MBL",
+        "timeZone": "EST",
+        "partyPhoneNumAct": [
+          {
+            "partyPhoneNumberActivityId": 1,
+            "communicationMethod": "TXT",
+            "activityType": "CNFMN",
+            "active": "Y"
+          },
+          {
+            "partyPhoneNumberActivityId": 2,
+            "communicationMethod": "IVR",
+            "activityType": "NTCF",
+            "active": "Y"
+          }
+        ]
+      },
+      {
+        "partyPhoneNumberId": 2,
+        "voiceIndicator": "Y",
+        "textIndicator": "N",
+        "countryCode": "001",
+        "phoneNumber": "645424475",
+        "extension": "1234",
+        "phoneNumberType": "HM",
+        "timeZone": "EST",
+        "partyPhoneNumAct": [
+          {
+            "partyPhoneNumberActivityId": 3,
+            "communicationMethod": "IVR",
+            "activityType": "NTCF",
+            "active": "Y"
+          }
+        ]
+      }
+    ],
+    "partyReferences": [
+      {
+        "partyReferenceId": 1,
+        "referenceType": "MUWEE",
+        "referenceNumber": "1"
+      }
+    ],
+    "partyPhysicalAddresses": [
+      {
+        "partyAddressId": 1,
+        "addressReasonCode": "HOME",
+        "addressLine1Text": "123 Main Street",
+        "addressLine2Text": "",
+        "addressLine3Text": null,
+        "cityName": "Dover",
+        "stateProvienceCode": "NH",
+        "postalCode": "12345",
+        "countryCode": "USA",
+        "partyPhysicalAddressActy": [
+          {
+            "partyPhysicalAddressActivityId": 1,
+            "activityType": "CNFMN",
+            "active": "Y"
+          }
+        ]
+      },
+      {
+        "partyAddressId": 2,
+        "addressReasonCode": "HOME",
+        "addressLine1Text": "123 Main Street",
+        "addressLine2Text": "",
+        "addressLine3Text": null,
+        "cityName": "Dover",
+        "stateProvienceCode": "NH",
+        "postalCode": "12345",
+        "countryCode": "USA",
+        "partyPhysicalAddressActy": [
+          {
+            "partyPhysicalAddressActivityId": 2,
+            "activityType": "NTCF",
+            "active": "Y"
+          }
+        ]
+      }
+    ],
+    "partyEmailAddresses": [
+      {
+        "partyEmailAddressId": 1,
+        "electronicAddressReasonCode": "HOME",
+        "electronicAddressText": "ragamdeepak@gmail.com",
+        "partyEmailAddressActy": [
+          {
+            "partyEmailAddressActivityId": 1,
+            "activityType": "CNFMN",
+            "active": "Y"
+          }
+        ]
+      },
+      {
+        "partyEmailAddressId": 2,
+        "electronicAddressReasonCode": "WORK",
+        "electronicAddressText": "ragamdeepak@gmail.com",
+        "partyEmailAddressActy": [
+          {
+            "partyEmailAddressActivityId": 2,
+            "activityType": "CNFMN",
+            "active": "Y"
+          }
+        ]
+      }
+    ]
+  }
+}

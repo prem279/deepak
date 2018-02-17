@@ -1,0 +1,68 @@
+spring:
+  application:
+    name: muw_employee_svc
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        default_schema: MUWEMP_DB
+
+info:
+  app:
+    name: ${spring.application.name}
+    description: This is the LMB Core Employer MUW Employee Service
+    version: 1.0.0
+
+server:
+  port: ${port:9011}
+
+management:
+  context-path: /manage
+
+endpoints:
+  health:
+    enabled: true
+    sensitive: false
+  info:
+    enabled: true
+    sensitive: false
+
+muw:
+  employee:
+    database:
+      schema: MUWEMP_DB
+
+datasource:
+  app:
+    initial-size: 0
+    max-idle: 5
+    max-wait: 5000
+    min-evictable-idle-time-millis: 600000
+    min-idle: 0
+    time-between-eviction-runs-millis: 300000
+    validation-query: select 1 from dual
+    max-active: 15
+    test-on-borrow: true
+
+    
+flyway:
+  datasource:
+    schema: ${muw.employee.database.schema}
+  migrate: 
+    goals: migrate, validate
+
+eureka:
+  instance:
+    protocol: ${muw_employee_protocol:http}
+    hostname: ${muw_employee_hostname:localhost}
+    nonSecurePortEnabled: ${muw_employee_non-secure-port-enabled:true}
+    nonSecurePort: ${muw_employee_non-secure-port:9011}
+    securePortEnabled: ${muw_employee_secure-port-enabled:false}
+    securePort: ${muw_employee_secure-port:443}
+    secure-health-check-url: ${muw_employee_protocol:http}://${eureka.instance.hostname}:${muw_employee_port:9011}${management.context-path}/health
+    status-page-url: ${muw_employee_protocol:http}://${eureka.instance.hostname}:${muw_employee_port:9011}${management.context-path}/info
+  client:
+    serviceUrl:
+      defaultZone: ${lmb_discovery_protocol:http}://${lmb_discovery_host:localhost}:${lmb_discovery_port:8761}/eureka/
+    initialInstanceInfoReplicationIntervalSeconds: 5

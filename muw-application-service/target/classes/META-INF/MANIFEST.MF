@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: MUW ApplicationService
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: n0296170
+Implementation-Vendor-Id: com.lmig.ci.lmbc.empr.muw.application
+Build-Jdk: 1.8.0_121
+Implementation-URL: http://projects.spring.io/spring-boot/ciit-spring-
+ boot-minimal-parent/ciit-spring-boot-parent/muw-application-service/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: LibertyForge
+Main-Class: com.lmig.ci.lmbc.empr.muw.application.MuwApplicationServic
+ e
+

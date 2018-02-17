@@ -1,0 +1,64 @@
+spring:
+  jpa:
+    show-sql: true
+    database: H2
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level: 
+    ROOT: INFO
+    org.springframework.security: INFO
+    org.hibernate: INFO
+    org.hibernate.type: INFO
+
+h2:
+  tcp:
+    enabled: true
+  web:
+    enabled: true    
+
+datasource:
+  app:
+    url: jdbc:h2:mem:employee_lcl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:db/h2/init/h2_setup.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+    initial-size: 0
+    max-idle: 5
+    max-conn-lifetime-millis: 1800000
+    max-total: 15
+    max-wait-millis: 5000
+    min-evictable-idle-time-millis: 600000
+    min-idle: 0
+    num-tests-per-eviction-run: 3
+    test-on-borrow: true
+    time-between-eviction-runs-millis: 300000
+    validation-query: select 1
+  flyway:
+    url: jdbc:h2:mem:employee_lcl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:db/h2/init/h2_setup.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+flyway:
+  locations: classpath:db/migration/versioned,db/migration/repeatable,db/h2/post_create
+  datasource:
+    user: sa
+    password:
+  placeholders:
+    BIGSTRING: VARCHAR2
+    NUMBER8: NUMBER(8)
+    DATETIME: TIMESTAMP
+    NUMBER11_2: NUMBER(11,2)
+    NUMBER5: NUMBER(5)
+    NUMBER10: NUMBER(10)
+    SETSCHEMA: SET SCHEMA
+    IDENTITY_1_1: AUTO_INCREMENT
+    IDENTITY_EMPLR_EMP_1_1: DEFAULT MUW_EMPLR_EMP_SEQ.NEXTVAL PRIMARY KEY
+    NUMBER19: BIGINT
+    EMPLOYEE_PK:
+    iforacle: --
+    ifjunit: 
+    H2IGNORELINE: --

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: employer-discovery-service
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: n0296170
+Implementation-Vendor-Id: com.lmig.ci.lmbc.empr.common
+Build-Jdk: 1.8.0_121
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: LibertyForge
+Main-Class: com.lmig.ci.lmbc.empr.common.discovery.ServiceDiscoveryApp
+ lication
+

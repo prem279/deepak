@@ -1,0 +1,19 @@
+logging:
+  level: 
+    ROOT: DEBUG
+    org.springframework.security: DEBUG
+    
+security:
+  config:
+    admin-role: CI_LMBC_EMPR_ADMIN
+    user-role: CI_LMBC_EMPR_USER
+    guest-role: CI_LMBC_EMPR_GUEST
+    user-search-base: uid\=\{0\},ou\=People
+    ssid-search-base: uid\=\{0\},ou\=Applications
+    group-search-base: ou\=Groups
+    ldap-url: classpath:ldap/migration/local-server.ldif
+    
+discovery:
+  client:
+    username: user
+    password: ENC(E057FDD064BDF9BB7CF9CBEFA6E4C991)

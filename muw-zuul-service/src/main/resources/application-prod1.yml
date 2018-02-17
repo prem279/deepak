@@ -1,0 +1,31 @@
+eureka:
+  instance:
+    hostname: lmbc-empr-muw-proxy-service.pdc.np.paas.lmig.com
+    nonSecurePortEnabled: false
+    securePort: 443
+    securePortEnabled: true
+    secure-health-check-url: https://${eureka.instance.hostname}${management.context-path}/health
+    status-page-url: https://${eureka.instance.hostname}${management.context-path}/info
+  client:
+    serviceUrl:
+      defaultZone: https://lmbc-empr-discovery-service.pdc.np.paas.lmig.com/eureka/
+
+logging:
+  level: 
+    ROOT: INFO
+    org.springframework.security: INFO
+    
+zuul:
+  debug:
+    request: false
+  host:
+    socket-timeout-millis: 45000
+    connect-timeout-millis: 45000
+  routes:
+    muwui:
+      url: https://lmbc-empr-muw-user-interface.pdc.np.paas.lmig.com
+
+security:
+  config:
+    admin-role: CI_LMBC_EMPR_DEVELOPER
+    ldap-url: ldaps://ldapskcintprd-01.kc.lmig.com:636

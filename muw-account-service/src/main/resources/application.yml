@@ -1,0 +1,73 @@
+spring:
+  application:
+    name: muw_employer_svc
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        default_schema: MUWACCT_DB
+
+info:
+  app:
+    name: ${spring.application.name}
+    description: This is the LMB Core Employer MUW Employer Service
+    version: 1.0.0
+
+server:
+  port: ${port:9001}
+
+management:
+  context-path: /manage
+
+endpoints:
+  health:
+    enabled: true
+    sensitive: false
+  info:
+    enabled: true
+    sensitive: false
+    
+datasource:
+  app:
+    initial-size: 0
+    max-idle: 5
+    max-wait: 5000
+    min-evictable-idle-time-millis: 600000
+    min-idle: 0
+    time-between-eviction-runs-millis: 300000
+    validation-query: select 1 from dual
+    max-active: 15
+    test-on-borrow: true
+
+muw:
+  employer:
+    database:
+      schema: MUWACCT_DB
+    
+flyway:
+  migrate: 
+    goals: migrate, validate
+
+eureka:
+  instance:
+    protocol: ${muw_employer_protocol:http}
+    hostname: ${muw_employer_hostname:localhost}
+    nonSecurePortEnabled: ${muw_employer_non-secure-port-enabled:true}
+    nonSecurePort: ${muw_employer_non-secure-port:9001}
+    securePortEnabled: ${muw_employer_secure-port-enabled:false}
+    securePort: ${muw_employer_secure-port:443}
+    secure-health-check-url: ${muw_employer_protocol:http}://${eureka.instance.hostname}:${muw_employer_port:9001}${management.context-path}/health
+    status-page-url: ${muw_employer_protocol:http}://${eureka.instance.hostname}:${muw_employer_port:9001}${management.context-path}/info
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${lmb_discovery_protocol:http}://username:password@${lmb_discovery_host:localhost}:${lmb_discovery_port:8761}/eureka/
+    initialInstanceInfoReplicationIntervalSeconds: 5
+    
+security:
+  config:
+    user-name-key: sub
+    authorities-key: groups
+    ldap-group-search-base: cn=Products,ou=Groups,o=Liberty,o=intranet

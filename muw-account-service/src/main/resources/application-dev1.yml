@@ -1,0 +1,98 @@
+spring:
+  jpa:
+    show-sql: true
+    database: Oracle
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level: 
+    ROOT: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate: DEBUG
+    org.hibernate.type: DEBUG   
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: https://test-lmidp.libertymutual.com/idp/userinfo.openid
+  config: 
+    service-id: ci_lmbc_empr_muw_ui
+    service-password: ENC(DADDE4EBAD937F0FEFBF335E0C324E94)
+    user-search-base: uid={0},ou=People,o=Liberty,o=Intranet
+    ssid-search-base: uid={0},ou=People,o=Applications,o=Intranet
+    group-search-base: cn=Products,ou=Groups,o=Liberty,o=intranet
+    ldap-url: ldaps://ldapsintdev-01.lmig.com:636
+    read-access-groups:
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_SALES
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMBC_EMPR_MUW_ACCT
+      - CI_LMBC_EMPR_MUW_TEST
+    read-write-access-groups:
+      - CI_LMBC_EMPR_MUW_SALES
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMBC_EMPR_MUW_ACCT
+      - CI_LMBC_EMPR_MUW_TEST
+    read-access-event-groups:
+      - CI_LMBC_EMPR_RPT_MUW
+      - CI_LMBC_EMPR_MUW_EMPLOYER_EVT
+      - CI_LMBC_EMPR_MUW_TEST
+      - CI_LMBC_EMPR_DEVELOPER
+      
+datasource:
+  app:
+    url: jdbc:oracle:thin:@vxpid-c5lb0001.lmig.com:1528:clb0p01d
+    username: MUWACCTSVCAP
+    password: ENC(D60B32C3D8F33C11DF419F961EB28E5E)
+    driver-class-name: oracle.jdbc.OracleDriver
+  flyway:
+    url: jdbc:oracle:thin:@vxpid-c5lb0001.lmig.com:1528:clb0p01d
+    username: MUWACCT_DB
+    password: ENC(40E2632C8E317EB4E585158FD85CB49B)
+    driver-class-name: oracle.jdbc.OracleDriver
+
+flyway:
+  locations: classpath:db/migration/versioned,db/migration/repeatable
+  placeholders:
+    BIGSTRING: VARCHAR2
+    DATETIME: TIMESTAMP
+    NUMBER11_2: NUMBER(11,2)
+    NUMBER5: NUMBER(5)
+    NUMBER10: NUMBER(10)
+    SETSCHEMA: ALTER SESSION SET CURRENT_SCHEMA =
+    IDENTITY_1_1: GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1)
+    IDENTITY_EMPLR_1_1: 
+    IDENTITY_PREF_1_1: 
+    IDENTITY_EOIPROD_1_1: 
+    IDENTITY_EMPLR_EVNT_1_1: DEFAULT MUW_EMPLR_EVNT_SEQ.NEXTVAL PRIMARY KEY
+    NUMBER19: NUMBER(19)
+    EMPLOYER_PK: ALTER TABLE muw_emplr_t ADD CONSTRAINT pk_muw_emplr_t PRIMARY KEY(emplr_id);
+    LABEL_TXT_PK: ALTER TABLE lbl_txt_t ADD CONSTRAINT pk_lbl_txt_t PRIMARY KEY(lbl_id);
+    PROD_LBL_PK: ALTER TABLE prod_lbl_t ADD CONSTRAINT pk_prod_lbl_t PRIMARY KEY(prod_id, lbl_id);
+    PREF_LBL_PK: ALTER TABLE pref_lbl_t ADD CONSTRAINT pk_pref_lbl_t PRIMARY KEY(emplr_prefcs_id, pref_type, lbl_id);
+    EMPLOYER_EVENT_PK:
+    H2IGNORELINE: 
+    iforacle: 
+    ifjunit: -- 
+    ORACLEIGNORELINE: --
+
+service:
+  contactServiceUrl: https://dev1-lmbc-empr-contact-service.pdc.np.paas.lmig.com/services/v1/
+  contactServiceId: ci_lmbc_empr_muw_ui
+  contactServicePassword: ENC(DADDE4EBAD937F0FEFBF335E0C324E94)
+  valid-values-url: https://dev1-lmbc-empr-valid-value-service.pdc.np.paas.lmig.com

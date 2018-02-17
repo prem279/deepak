@@ -1,0 +1,28 @@
+{
+  "rowEffectiveDatetime" : "2017-02-01 13:01:11.150",
+  "rowExpirationDatetime" : "2017-02-01 13:01:11.150",
+  "createDatetime" : "2017-02-01 13:01:11.150",
+  "lastUpdateDatetime" : "2016-12-06 09:12:37.193",
+  "employerEmployeeId" : 2,
+  "employerId" : 65,
+  "employeeSsn" : "123456789",
+  "previousLastName" : null,
+  "annualEarningsAmount" : 250000,
+  "employeeClassCode" : "class",
+  "employeeIdentificationNumber" : null,
+  "hireDate" : "1998-04-13",
+  "jobTitleName" : "job",
+  "communicationMethodCode" : "USP   ",
+  "reportingLocationNumber" : "loc",
+  "concurrencyQuantity" : 3,
+  "createUserIdNumber" : "n0101010",
+  "lastUpdatedUserIdNumber" : "n0101010",
+  "_links" : {
+    "self" : {
+      "href" : "https://test1-lmbc-empr-muw-employee-service.pdc.np.paas.lmig.com/services/v1/employees/18"
+    },
+    "employee" : {
+      "href" : "https://test1-lmbc-empr-muw-employee-service.pdc.np.paas.lmig.com/services/v1/employees/18"
+    }
+  }
+}

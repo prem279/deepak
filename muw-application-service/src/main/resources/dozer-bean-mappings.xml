@@ -1,0 +1,1526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<!-- Employer mapping -->
+	<mapping>
+	
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.Application</class-b>
+
+		<field>
+			<a>applicationId</a>
+			<b>applicationId</b>
+		</field>
+
+		<field>
+			<a>employerId</a>
+			<b>employerId</b>
+		</field>
+
+		<field>
+			<a>employerEmployeeId</a>
+			<b>employerEmployeeId</b>
+		</field>
+
+		<field>
+			<a>applicationReceivedDate</a>
+			<b>applicationReceivedDate</b>
+		</field>
+
+		<field>
+			<a>familySttsChangeEventDate</a>
+			<b>familySttsChangeEventDate</b>
+		</field>
+
+		<field>
+			<a>reasonCode</a>
+			<b>reasonCode</b>
+		</field>
+
+		<field>
+			<a>submissionMethodCode</a>
+			<b>submissionMethodCode</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+		<field>
+			<a>applicationProducts</a>
+			<b>applicationProducts</b>
+		</field>
+
+		<field>
+			<a>applicants</a>
+			<b>applicants</b>
+		</field>
+
+		<field>
+			<a>applicationMedicalFactors</a>
+			<b>applicationMedicalFactors</b>
+		</field>
+	</mapping>
+
+	<mapping>
+	
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.BasicApplicationResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.Application</class-b>
+
+		<field>
+			<a>applicationId</a>
+			<b>applicationId</b>
+		</field>
+
+		<field>
+			<a>employerId</a>
+			<b>employerId</b>
+		</field>
+
+		<field>
+			<a>employerEmployeeId</a>
+			<b>employerEmployeeId</b>
+		</field>
+
+		<field>
+			<a>applicationReceivedDate</a>
+			<b>applicationReceivedDate</b>
+		</field>
+
+		<field>
+			<a>familySttsChangeEventDate</a>
+			<b>familySttsChangeEventDate</b>
+		</field>
+
+		<field>
+			<a>reasonCode</a>
+			<b>reasonCode</b>
+		</field>
+
+		<field>
+			<a>submissionMethodCode</a>
+			<b>submissionMethodCode</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+		<field>
+			<a>applicationProducts</a>
+			<b>applicationProducts</b>
+		</field>
+
+		<field>
+			<a>applicationMedicalFactors</a>
+			<b>applicationMedicalFactors</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+	</mapping>
+
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationProductResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicationProduct</class-b>
+
+		<field>
+			<a>applicationProductId</a>
+			<b>applicationProductId</b>
+		</field>
+
+		<field>
+			<a>productCode</a>
+			<b>productCode</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicantProductResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicantProduct</class-b>
+
+		<field>
+			<a>applicationApplicantProductId</a>
+			<b>applicationApplicantProductId</b>
+		</field>
+		
+		<field>
+			<a>applicationProductId</a>
+			<b>applicationProductId</b>
+		</field>
+
+		<field>
+			<a>currentProductAmountTypeCode</a>
+			<b>currentProductAmountTypeCode</b>
+		</field>
+
+		<field>
+			<a>currentProductAmount</a>
+			<b>currentProductAmount</b>
+		</field>
+
+		<field>
+			<a>currentProductPercent</a>
+			<b>currentProductPercent</b>
+		</field>
+
+		<field>
+			<a>currentProductQuantity</a>
+			<b>currentProductQuantity</b>
+		</field>
+
+		<field>
+			<a>requestedProductAmountTypeCode</a>
+			<b>requestedProductAmountTypeCode</b>
+		</field>
+
+		<field>
+			<a>requestedProductAmount</a>
+			<b>requestedProductAmount</b>
+		</field>
+
+		<field>
+			<a>requestedProductPercent</a>
+			<b>requestedProductPercent</b>
+		</field>
+
+		<field>
+			<a>requestedProductQuantity</a>
+			<b>requestedProductQuantity</b>
+		</field>
+
+		<field>
+			<a>requestedProductBeginDate</a>
+			<b>requestedProductBeginDate</b>
+		</field>
+
+		<field>
+			<a>statusDeterminationDate</a>
+			<b>statusDeterminationDate</b>
+		</field>
+
+		<field>
+			<a>statusTypeCode</a>
+			<b>statusTypeCode</b>
+		</field>
+
+		<field>
+			<a>productApproveEffectiveDate</a>
+			<b>productApproveEffectiveDate</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+
+
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicantResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.Applicant</class-b>
+
+		<field>
+			<a>applicationApplicantId</a>
+			<b>applicationApplicantId</b>
+		</field>
+
+		<field>
+			<a>applicationRoleCode</a>
+			<b>applicationRoleCode</b>
+		</field>
+
+		<field>
+			<a>applicantSSN</a>
+			<b>applicantSSN</b>
+		</field>
+
+		<field>
+			<a>birthDate</a>
+			<b>birthDate</b>
+		</field>
+
+		<field>
+			<a>firstName</a>
+			<b>firstName</b>
+		</field>
+
+		<field>
+			<a>middleInitial</a>
+			<b>middleInitial</b>
+		</field>
+
+		<field>
+			<a>lastName</a>
+			<b>lastName</b>
+		</field>
+
+		<field>
+			<a>priorLastName</a>
+			<b>priorLastName</b>
+		</field>
+
+		<field>
+			<a>birthCityName</a>
+			<b>birthCityName</b>
+		</field>
+
+		<field>
+			<a>birthStateProvinceCode</a>
+			<b>birthStateProvinceCode</b>
+		</field>
+
+		<field>
+			<a>birthCountryCode</a>
+			<b>birthCountryCode</b>
+		</field>
+
+		<field>
+			<a>genderCode</a>
+			<b>genderCode</b>
+		</field>
+
+		<field>
+			<a>heightInchQuantity</a>
+			<b>heightInchQuantity</b>
+		</field>
+
+		<field>
+			<a>weightQuantity</a>
+			<b>weightQuantity</b>
+		</field>
+		
+		<field>
+			<a>applicantProducts</a>
+			<b>applicantProducts</b>
+		</field>
+		
+		<field>
+			<a>conditions</a>
+			<b>conditions</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationMedicalFactorResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicationMedicalFactor</class-b>
+
+		<field>
+			<a>applicationMedicalFactorId</a>
+			<b>applicationMedicalFactorId</b>
+		</field>
+
+		<field>
+			<a>applicationRoleCode</a>
+			<b>applicationRoleCode</b>
+		</field>
+
+		<field>
+			<a>medicalFactorQuestionCode</a>
+			<b>medicalFactorQuestionCode</b>
+		</field>
+
+		<field>
+			<a>alternativeMedicalFactorQuestionCode</a>
+			<b>alternativeMedicalFactorQuestionCode</b>
+		</field>
+
+		<field>
+			<a>medicalFactorText</a>
+			<b>medicalFactorText</b>
+		</field>
+
+		<field>
+			<a>medicalFactorIndicator</a>
+			<b>medicalFactorIndicator</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+
+	<mapping>
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicantConditionResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicantCondition</class-b>
+		<field>
+			<a>applicantConditionId</a>
+			<b>applicantConditionId</b>
+		</field>
+
+		<field>
+			<a>conditionCode</a>
+			<b>conditionCode</b>
+		</field>
+
+		<field>
+			<a>otherConditionText</a>
+			<b>otherConditionText</b>
+		</field>
+
+		<field>
+			<a>conditionRecoveryDate</a>
+			<b>conditionRecoveryDate</b>
+		</field>
+		<field>
+			<a>conditionOnsetDate</a>
+			<b>conditionOnsetDate</b>
+		</field>
+
+		<field>
+			<a>treatmentHealthFullName</a>
+			<b>treatmentHealthFullName</b>
+		</field>
+		<field>
+			<a>treatmentReceivedText</a>
+			<b>treatmentReceivedText</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+		<field>
+			<a>medications</a>
+			<b>medications</b>
+		</field>
+
+	</mapping>
+
+	<!-- ApplicantMedication mapping -->
+
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicantMedicationResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicantMedication</class-b>
+		<field>
+			<a>applicantMedicationId</a>
+			<b>applicantMedicationId</b>
+		</field>
+
+		<field>
+			<a>medicationCode</a>
+			<b>medicationCode</b>
+		</field>
+
+		<field>
+			<a>otherMedicationText</a>
+			<b>otherMedicationText</b>
+		</field>
+		<field>
+			<a>PrescriptionDate</a>
+			<b>PrescriptionDate</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+	</mapping>
+	
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.BasicApplicationProductResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicationProduct</class-b>
+
+		<field>
+			<a>applicationProductId</a>
+			<b>applicationProductId</b>
+		</field>
+
+		<field>
+			<a>productCode</a>
+			<b>productCode</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+	
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.BasicApplicationMedicalFactorResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicationMedicalFactor</class-b>
+
+		<field>
+			<a>applicationMedicalFactorId</a>
+			<b>applicationMedicalFactorId</b>
+		</field>
+
+		<field>
+			<a>applicationRoleCode</a>
+			<b>applicationRoleCode</b>
+		</field>
+
+		<field>
+			<a>medicalFactorQuestionCode</a>
+			<b>medicalFactorQuestionCode</b>
+		</field>
+
+		<field>
+			<a>alternativeMedicalFactorQuestionCode</a>
+			<b>alternativeMedicalFactorQuestionCode</b>
+		</field>
+
+		<field>
+			<a>medicalFactorIndicator</a>
+			<b>medicalFactorIndicator</b>
+		</field>
+
+		<field>
+			<a>medicalFactorText</a>
+			<b>medicalFactorText</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+	
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicantExtendedResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.Applicant</class-b>
+
+		<field>
+			<a>applicationApplicantId</a>
+			<b>applicationApplicantId</b>
+		</field>
+
+		<field>
+			<a>applicationRoleCode</a>
+			<b>applicationRoleCode</b>
+		</field>
+
+		<field>
+			<a>applicantSSN</a>
+			<b>applicantSSN</b>
+		</field>
+
+		<field>
+			<a>birthDate</a>
+			<b>birthDate</b>
+		</field>
+
+		<field>
+			<a>firstName</a>
+			<b>firstName</b>
+		</field>
+
+		<field>
+			<a>middleInitial</a>
+			<b>middleInitial</b>
+		</field>
+
+		<field>
+			<a>lastName</a>
+			<b>lastName</b>
+		</field>
+
+		<field>
+			<a>priorLastName</a>
+			<b>priorLastName</b>
+		</field>
+
+		<field>
+			<a>birthCityName</a>
+			<b>birthCityName</b>
+		</field>
+
+		<field>
+			<a>birthStateProvinceCode</a>
+			<b>birthStateProvinceCode</b>
+		</field>
+
+		<field>
+			<a>birthCountryCode</a>
+			<b>birthCountryCode</b>
+		</field>
+
+		<field>
+			<a>genderCode</a>
+			<b>genderCode</b>
+		</field>
+
+		<field>
+			<a>heightInchQuantity</a>
+			<b>heightInchQuantity</b>
+		</field>
+
+		<field>
+			<a>weightQuantity</a>
+			<b>weightQuantity</b>
+		</field>
+		
+		<field>
+			<a>applicantProducts</a>
+			<b>applicantProducts</b>
+		</field>
+		
+		<field>
+			<a>conditions</a>
+			<b>conditions</b>
+		</field>
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+	</mapping>
+		
+	
+	<mapping>
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicantProductExtendedResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicantProduct</class-b>
+
+		<field>
+			<a>applicationApplicantProductId</a>
+			<b>applicationApplicantProductId</b>
+		</field>
+		
+		<field>
+			<a>applicationProductId</a>
+			<b>applicationProductId</b>
+		</field>
+
+		<field>
+			<a>currentProductAmountTypeCode</a>
+			<b>currentProductAmountTypeCode</b>
+		</field>
+
+		<field>
+			<a>currentProductAmount</a>
+			<b>currentProductAmount</b>
+		</field>
+
+		<field>
+			<a>currentProductPercent</a>
+			<b>currentProductPercent</b>
+		</field>
+
+		<field>
+			<a>currentProductQuantity</a>
+			<b>currentProductQuantity</b>
+		</field>
+
+		<field>
+			<a>requestedProductAmountTypeCode</a>
+			<b>requestedProductAmountTypeCode</b>
+		</field>
+
+		<field>
+			<a>requestedProductAmount</a>
+			<b>requestedProductAmount</b>
+		</field>
+
+		<field>
+			<a>requestedProductPercent</a>
+			<b>requestedProductPercent</b>
+		</field>
+
+		<field>
+			<a>requestedProductQuantity</a>
+			<b>requestedProductQuantity</b>
+		</field>
+
+		<field>
+			<a>requestedProductBeginDate</a>
+			<b>requestedProductBeginDate</b>
+		</field>
+
+		<field>
+			<a>statusDeterminationDate</a>
+			<b>statusDeterminationDate</b>
+		</field>
+
+		<field>
+			<a>statusTypeCode</a>
+			<b>statusTypeCode</b>
+		</field>
+
+		<field>
+			<a>productApproveEffectiveDate</a>
+			<b>productApproveEffectiveDate</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+	
+
+	
+	
+	<mapping>
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.CondensedApplicationResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.Application</class-b>
+       	<field>
+			<a>applicationId</a>
+			<b>applicationId</b>
+		</field>
+			<field>
+			<a>employerEmployeeId</a>
+			<b>employerEmployeeId</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+		
+		
+	
+    </mapping>
+    
+    <mapping>
+	
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSubmissionApplicationResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.Application</class-b>
+
+		<field>
+			<a>applicationId</a>
+			<b>applicationId</b>
+		</field>
+		
+		<field>
+			<a>employerId</a>
+			<b>employerId</b>
+		</field>
+
+		<field>
+			<a>applicationReceivedDate</a>
+			<b>applicationReceivedDate</b>
+		</field>
+
+		<field>
+			<a>familySttsChangeEventDate</a>
+			<b>familySttsChangeEventDate</b>
+		</field>
+
+		<field>
+			<a>reasonCode</a>
+			<b>reasonCode</b>
+		</field>
+
+		<field>
+			<a>submissionMethodCode</a>
+			<b>submissionMethodCode</b>
+		</field>
+
+		<field>
+			<a>applicants</a>
+			<b>applicants</b>
+		</field>
+
+		<field>
+			<a>applicationMedicalFactors</a>
+			<b>applicationMedicalFactors</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+	</mapping>
+    
+    <mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSubmissionApplicantResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.Applicant</class-b>
+
+		<field>
+			<a>applicationApplicantId</a>
+			<b>applicationApplicantId</b>
+		</field>
+
+		<field>
+			<a>applicationRoleCode</a>
+			<b>applicationRoleCode</b>
+		</field>
+
+		<field>
+			<a>applicantSSN</a>
+			<b>applicantSSN</b>
+		</field>
+
+		<field>
+			<a>birthDate</a>
+			<b>birthDate</b>
+		</field>
+
+		<field>
+			<a>firstName</a>
+			<b>firstName</b>
+		</field>
+
+		<field>
+			<a>middleInitial</a>
+			<b>middleInitial</b>
+		</field>
+
+		<field>
+			<a>lastName</a>
+			<b>lastName</b>
+		</field>
+
+		<field>
+			<a>priorLastName</a>
+			<b>priorLastName</b>
+		</field>
+
+		<field>
+			<a>birthCityName</a>
+			<b>birthCityName</b>
+		</field>
+
+		<field>
+			<a>birthStateProvinceCode</a>
+			<b>birthStateProvinceCode</b>
+		</field>
+
+		<field>
+			<a>birthCountryCode</a>
+			<b>birthCountryCode</b>
+		</field>
+
+		<field>
+			<a>genderCode</a>
+			<b>genderCode</b>
+		</field>
+
+		<field>
+			<a>heightInchQuantity</a>
+			<b>heightInchQuantity</b>
+		</field>
+
+		<field>
+			<a>weightQuantity</a>
+			<b>weightQuantity</b>
+		</field>
+		
+		<field>
+			<a>applicantProducts</a>
+			<b>applicantProducts</b>
+		</field>
+		
+		<field>
+			<a>conditions</a>
+			<b>conditions</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+	
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSubmissionMedicalFactorResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicationMedicalFactor</class-b>
+
+		<field>
+			<a>applicationMedicalFactorId</a>
+			<b>applicationMedicalFactorId</b>
+		</field>
+
+		<field>
+			<a>applicationRoleCode</a>
+			<b>applicationRoleCode</b>
+		</field>
+
+		<field>
+			<a>medicalFactorQuestionCode</a>
+			<b>medicalFactorQuestionCode</b>
+		</field>
+
+		<field>
+			<a>alternativeMedicalFactorQuestionCode</a>
+			<b>alternativeMedicalFactorQuestionCode</b>
+		</field>
+
+		<field>
+			<a>medicalFactorIndicator</a>
+			<b>medicalFactorIndicator</b>
+		</field>
+		
+		<field>
+			<a>medicalFactorText</a>
+			<b>medicalFactorText</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+		<mapping>
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSubmissionApplicantConditionResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicantCondition</class-b>
+
+		<field>
+			<a>applicantConditionId</a>
+			<b>applicantConditionId</b>
+		</field>
+
+		<field>
+			<a>conditionCode</a>
+			<b>conditionCode</b>
+		</field>
+
+		<field>
+			<a>otherConditionText</a>
+			<b>otherConditionText</b>
+		</field>
+
+		<field>
+			<a>conditionRecoveryDate</a>
+			<b>conditionRecoveryDate</b>
+		</field>
+		<field>
+			<a>conditionOnsetDate</a>
+			<b>conditionOnsetDate</b>
+		</field>
+
+		<field>
+			<a>treatmentHealthFullName</a>
+			<b>treatmentHealthFullName</b>
+		</field>
+		<field>
+			<a>treatmentReceivedText</a>
+			<b>treatmentReceivedText</b>
+		</field>
+		<field>
+			<a>medications</a>
+			<b>medications</b>
+		</field>
+		
+		<field>
+			<a>questionnaireResponses</a>
+			<b>questionnaireResponses</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+	
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSubmissionApplicantMedicationResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicantMedication</class-b>
+
+		<field>
+			<a>applicantMedicationId</a>
+			<b>applicantMedicationId</b>
+		</field>
+		
+		<field>
+			<a>medicationCode</a>
+			<b>medicationCode</b>
+		</field>
+
+		<field>
+			<a>otherMedicationText</a>
+			<b>otherMedicationText</b>
+		</field>
+		<field>
+			<a>PrescriptionDate</a>
+			<b>PrescriptionDate</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+	</mapping>
+	
+	<mapping>
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSubmissionApplicantQuestionnaireResponseResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.QuestionnaireResponse</class-b>
+		
+		<field>
+			<a>applicantQuestionResponseId</a>
+			<b>applicantQuestionResponseId</b>
+		</field>
+		
+		<field>
+			<a>questionTypeCode</a>
+			<b>questionTypeCode</b>
+		</field>
+		
+		<field>
+			<a>questionCode</a>
+			<b>questionCode</b>
+		</field>
+		
+		<field>
+			<a>additionalQuestionCode</a>
+			<b>additionalQuestionCode</b>
+		</field>
+		
+		<field>
+			<a>responseAmount</a>
+			<b>responseAmount</b>
+		</field>
+		
+		<field>
+			<a>responseDate</a>
+			<b>responseDate</b>
+		</field>
+		
+		<field>
+			<a>responseIndicator</a>
+			<b>responseIndicator</b>
+		</field>
+		
+		<field>
+			<a>responseNumber</a>
+			<b>responseNumber</b>
+		</field>
+		
+		<field>
+			<a>responseQuantity</a>
+			<b>responseQuantity</b>
+		</field>
+		
+		<field>
+			<a>responseText</a>
+			<b>responseText</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+		
+	</mapping>
+	
+		<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSubmissionApplicantProductResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicantProduct</class-b>
+
+		<field>
+			<a>applicationApplicantProductId</a>
+			<b>applicationApplicantProductId</b>
+		</field>
+		
+		<field>
+			<a>applicationProductId</a>
+			<b>applicationProductId</b>
+		</field>
+
+		<field>
+			<a>currentProductAmountTypeCode</a>
+			<b>currentProductAmountTypeCode</b>
+		</field>
+
+		<field>
+			<a>currentProductAmount</a>
+			<b>currentProductAmount</b>
+		</field>
+
+		<field>
+			<a>currentProductPercent</a>
+			<b>currentProductPercent</b>
+		</field>
+
+		<field>
+			<a>currentProductQuantity</a>
+			<b>currentProductQuantity</b>
+		</field>
+
+		<field>
+			<a>requestedProductAmountTypeCode</a>
+			<b>requestedProductAmountTypeCode</b>
+		</field>
+
+		<field>
+			<a>requestedProductAmount</a>
+			<b>requestedProductAmount</b>
+		</field>
+
+		<field>
+			<a>requestedProductPercent</a>
+			<b>requestedProductPercent</b>
+		</field>
+
+		<field>
+			<a>requestedProductQuantity</a>
+			<b>requestedProductQuantity</b>
+		</field>
+
+		<field>
+			<a>requestedProductBeginDate</a>
+			<b>requestedProductBeginDate</b>
+		</field>
+		<field>
+			<a>coverageEligibilityDate</a>
+			<b>coverageEligibilityDate</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+	<mapping>
+	
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSearchApplicationResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.Application</class-b>
+
+		<field>
+			<a>applicationId</a>
+			<b>applicationId</b>
+		</field>
+
+		<field>
+			<a>employerId</a>
+			<b>employerId</b>
+		</field>
+
+		<field>
+			<a>employerEmployeeId</a>
+			<b>employerEmployeeId</b>
+		</field>
+
+		<field>
+			<a>applicationReceivedDate</a>
+			<b>applicationReceivedDate</b>
+		</field>
+
+		<field>
+			<a>familySttsChangeEventDate</a>
+			<b>familySttsChangeEventDate</b>
+		</field>
+
+		<field>
+			<a>reasonCode</a>
+			<b>reasonCode</b>
+		</field>
+
+		<field>
+			<a>submissionMethodCode</a>
+			<b>submissionMethodCode</b>
+		</field>
+
+		<field>
+			<a>applicants</a>
+			<b>applicants</b>
+		</field>
+
+		<field>
+			<a>applicationMedicalFactors</a>
+			<b>applicationMedicalFactors</b>
+		</field>
+		
+		<field>
+			<a>applicationProducts</a>
+			<b>applicationProducts</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+	</mapping>
+    
+    <mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSearchApplicantResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.Applicant</class-b>
+
+		<field>
+			<a>applicationApplicantId</a>
+			<b>applicationApplicantId</b>
+		</field>
+
+		<field>
+			<a>applicationRoleCode</a>
+			<b>applicationRoleCode</b>
+		</field>
+
+		<field>
+			<a>applicantSSN</a>
+			<b>applicantSSN</b>
+		</field>
+
+		<field>
+			<a>birthDate</a>
+			<b>birthDate</b>
+		</field>
+
+		<field>
+			<a>firstName</a>
+			<b>firstName</b>
+		</field>
+
+		<field>
+			<a>middleInitial</a>
+			<b>middleInitial</b>
+		</field>
+
+		<field>
+			<a>lastName</a>
+			<b>lastName</b>
+		</field>
+
+		<field>
+			<a>priorLastName</a>
+			<b>priorLastName</b>
+		</field>
+
+		<field>
+			<a>birthCityName</a>
+			<b>birthCityName</b>
+		</field>
+
+		<field>
+			<a>birthStateProvinceCode</a>
+			<b>birthStateProvinceCode</b>
+		</field>
+
+		<field>
+			<a>birthCountryCode</a>
+			<b>birthCountryCode</b>
+		</field>
+
+		<field>
+			<a>genderCode</a>
+			<b>genderCode</b>
+		</field>
+
+		<field>
+			<a>heightInchQuantity</a>
+			<b>heightInchQuantity</b>
+		</field>
+
+		<field>
+			<a>weightQuantity</a>
+			<b>weightQuantity</b>
+		</field>
+		
+		<field>
+			<a>applicantProducts</a>
+			<b>applicantProducts</b>
+		</field>
+		
+		<field>
+			<a>conditions</a>
+			<b>conditions</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+	
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSearchMedicalFactorResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicationMedicalFactor</class-b>
+
+		<field>
+			<a>applicationMedicalFactorId</a>
+			<b>applicationMedicalFactorId</b>
+		</field>
+
+		<field>
+			<a>applicationRoleCode</a>
+			<b>applicationRoleCode</b>
+		</field>
+
+		<field>
+			<a>medicalFactorQuestionCode</a>
+			<b>medicalFactorQuestionCode</b>
+		</field>
+
+		<field>
+			<a>alternativeMedicalFactorQuestionCode</a>
+			<b>alternativeMedicalFactorQuestionCode</b>
+		</field>
+
+		<field>
+			<a>medicalFactorIndicator</a>
+			<b>medicalFactorIndicator</b>
+		</field>
+		
+		<field>
+			<a>medicalFactorText</a>
+			<b>medicalFactorText</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+	
+	<mapping>
+	
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSearchApplicationProductResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicationProduct</class-b>
+		
+		<field>
+			<a>applicationProductId</a>
+			<b>applicationProductId</b>
+		</field>
+		
+		<field>
+			<a>productCode</a>
+			<b>productCode</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+	
+	</mapping>
+	
+		<mapping>
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSearchApplicantConditionResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicantCondition</class-b>
+
+		<field>
+			<a>applicantConditionId</a>
+			<b>applicantConditionId</b>
+		</field>
+
+		<field>
+			<a>conditionCode</a>
+			<b>conditionCode</b>
+		</field>
+
+		<field>
+			<a>otherConditionText</a>
+			<b>otherConditionText</b>
+		</field>
+
+		<field>
+			<a>conditionRecoveryDate</a>
+			<b>conditionRecoveryDate</b>
+		</field>
+		<field>
+			<a>conditionOnsetDate</a>
+			<b>conditionOnsetDate</b>
+		</field>
+
+		<field>
+			<a>treatmentHealthFullName</a>
+			<b>treatmentHealthFullName</b>
+		</field>
+		<field>
+			<a>treatmentReceivedText</a>
+			<b>treatmentReceivedText</b>
+		</field>
+		<field>
+			<a>medications</a>
+			<b>medications</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+	
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSearchApplicantMedicationResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicantMedication</class-b>
+		
+		<field>
+			<a>applicantMedicationId</a>
+			<b>applicantMedicationId</b>
+		</field>
+		
+		<field>
+			<a>medicationCode</a>
+			<b>medicationCode</b>
+		</field>
+
+		<field>
+			<a>otherMedicationText</a>
+			<b>otherMedicationText</b>
+		</field>
+		<field>
+			<a>PrescriptionDate</a>
+			<b>PrescriptionDate</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+	</mapping>
+	
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationSearchApplicantProductResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicantProduct</class-b>
+
+		<field>
+			<a>applicationApplicantProductId</a>
+			<b>applicationApplicantProductId</b>
+		</field>
+
+		<field>
+			<a>currentProductAmountTypeCode</a>
+			<b>currentProductAmountTypeCode</b>
+		</field>
+
+		<field>
+			<a>currentProductAmount</a>
+			<b>currentProductAmount</b>
+		</field>
+
+		<field>
+			<a>currentProductPercent</a>
+			<b>currentProductPercent</b>
+		</field>
+
+		<field>
+			<a>currentProductQuantity</a>
+			<b>currentProductQuantity</b>
+		</field>
+
+		<field>
+			<a>requestedProductAmountTypeCode</a>
+			<b>requestedProductAmountTypeCode</b>
+		</field>
+
+		<field>
+			<a>requestedProductAmount</a>
+			<b>requestedProductAmount</b>
+		</field>
+
+		<field>
+			<a>requestedProductPercent</a>
+			<b>requestedProductPercent</b>
+		</field>
+
+		<field>
+			<a>requestedProductQuantity</a>
+			<b>requestedProductQuantity</b>
+		</field>
+
+		<field>
+			<a>requestedProductBeginDate</a>
+			<b>requestedProductBeginDate</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+	</mapping>
+	
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.application.api.ApplicationEventResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.application.domain.ApplicationEvent</class-b>
+
+		<field>
+			<a>eventId</a>
+			<b>eventId</b>
+		</field>
+
+		<field>
+			<a>subjectAreaId</a>
+			<b>subjectAreaId</b>
+		</field>
+
+		<field>
+			<a>subjectAreaCode</a>
+			<b>subjectAreaCode</b>
+		</field>
+
+		<field>
+			<a>changeEventCode</a>
+			<b>changeEventCode</b>
+		</field>
+
+		<field>
+			<a>businessEventCode</a>
+			<b>businessEventCode</b>
+		</field>
+
+		<field>
+			<a>beforeEventData</a>
+			<b>beforeEventData</b>
+		</field>
+
+		<field>
+			<a>changeSet</a>
+			<b>changeSet</b>
+		</field>
+
+		<field>
+			<a>afterEventData</a>
+			<b>afterEventData</b>
+		</field>
+
+		<field>
+			<a>lockOwnerName</a>
+			<b>lockOwnerName</b>
+		</field>
+
+		<field>
+			<a>lockTime</a>
+			<b>lockTime</b>
+		</field>
+		
+		<field>
+			<a>processedIndicator</a>
+			<b>processedIndicator</b>
+		</field>
+		
+		<field>
+			<a>processedTime</a>
+			<b>processedTime</b>
+		</field>
+
+	</mapping>
+   </mappings>

@@ -1,0 +1,57 @@
+spring:
+  jpa:
+    show-sql: true
+    database: H2
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level: 
+    ROOT: INFO
+    org.springframework.security: INFO
+    org.hibernate: INFO
+    org.hibernate.type: INFO
+
+h2:
+  tcp:
+    enabled: true
+  web:
+    enabled: true    
+
+datasource:
+  app:
+    url: jdbc:h2:mem:employee_lcl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:db/h2/init/h2_setup.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  flyway:
+    url: jdbc:h2:mem:employee_lcl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:db/h2/init/h2_setup.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+flyway:
+  locations: classpath:db/migration/versioned,db/migration/repeatable,db/h2/post_create
+  placeholders:
+    BIGSTRING: VARCHAR2
+    DATETIME: TIMESTAMP
+    NUMBER11_2: NUMBER(11,2)
+    NUMBER5: NUMBER(5)
+    NUMBER10: NUMBER(10)
+    NUMBER8: NUMBER(8)
+    SETSCHEMA: SET SCHEMA
+    IDENTITY_1_1: AUTO_INCREMENT
+    IDENTITY_EMPLR_EMP_1_1: DEFAULT MUW_EMPLR_EMP_SEQ.NEXTVAL PRIMARY KEY
+    NUMBER19: BIGINT
+    EMPLOYEE_PK:
+    iforacle: --
+    ifjunit: 
+    H2IGNORELINE: --
+    
+service:
+  employerServiceUrl: http://localhost:9001/services/v1/
+  employerServiceId: ci_lmbc_empr_muw_ui
+  employerServicePassword: ENC(C0EA700D285EDEE315A6BF5863B875A8)
+  contactServiceUrl: http://localhost:8089/services/v1/
+  

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+          
+          <!-- Employee mapping -->
+          <mapping>
+          		<class-a>com.lmig.ci.lmbc.empr.muw.employee.api.EmployeeResource</class-a>
+          		<class-b>com.lmig.ci.lmbc.empr.muw.employee.domain.Employee</class-b>
+          		
+          		 <field>
+  					<a>employerEmployeeId</a>
+  					<b>employerEmployeeId</b>
+  				</field>		
+  				
+  				<field>
+  					<a>employerId</a>
+  					<b>employerId</b>
+  				</field>
+  				
+  				<field>
+    				<a>employeeSsn</a>
+    				<b>employeeSsn</b>
+  				</field>
+  				<field>
+  					<a>previousLastName</a>
+  					<b>previousLastName</b>
+  				</field>
+  				
+  				<field>
+  					<a>annualEarningsAmount</a>
+  					<b>annualEarningsAmount</b>
+  				</field>
+  				
+  				<field>
+  					<a>employeeClassCode</a>
+  					<b>employeeClassCode</b>
+  				</field>
+  				
+  				<field>
+  					<a>employeeIdentificationNumber</a>
+  					<b>employeeIdentificationNumber</b>
+  				</field>
+  				
+  				<field>
+  					<a>hireDate</a>
+  					<b>hireDate</b>
+  				</field>
+  				
+  				<field>
+  					<a>jobTitleName</a>
+  					<b>jobTitleName</b>
+  				</field>
+  				
+  				<field>
+  					<a>communicationMethodCode</a>
+  					<b>communicationMethodCode</b>
+  				</field>
+  				
+  				<field>
+  					<a>concurrencyQuality</a>
+  					<b>concurrencyQuality</b>
+  				</field>
+  				
+				<field>
+					<a>createUserIdNumber</a>
+					<b>createUserIdNumber</b>
+				</field>
+
+				<field>
+					<a>lastUpdatedUserIdNumber</a>
+					<b>lastUpdatedUserIdNumber</b>
+				</field>
+	
+				<field>
+					<a>reportingLocationNumber</a>
+					<b>reportingLocationNumber</b>
+				</field>
+	
+				<field>
+					<a>rowEffectiveDatetime</a>
+					<b>rowEffectiveDatetime</b>
+				</field>
+				
+				<field>
+					<a>rowExpirationDatetime</a>
+					<b>rowExpirationDatetime</b>
+				</field>
+				
+				<field>
+					<a>createDatetime</a>
+					<b>createDatetime</b>
+				</field>
+				
+				<field>
+					<a>lastUpdateDatetime</a>
+					<b>lastUpdateDatetime</b>
+				</field>
+				</mapping>
+				
+</mappings>

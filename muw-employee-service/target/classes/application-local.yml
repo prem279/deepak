@@ -1,0 +1,119 @@
+spring:
+  jpa:
+    show-sql: true
+    database: H2
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: https://test-lmidp.libertymutual.com/idp/userinfo.openid
+  config:
+    service-id: ci_lmbc_empr_muw_ui
+    service-password: ENC(C0EA700D285EDEE315A6BF5863B875A8)
+    user-search-base: uid={0},ou=People,o=Liberty,o=Intranet
+    ssid-search-base: uid={0},ou=People,o=Applications,o=Intranet
+    group-search-base: cn=Products,ou=Groups,o=Liberty,o=intranet
+    ldap-url: ldaps://ldapsintdev-01.lmig.com:636
+    employee-read-access-groups: 
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_SALES
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED
+      - CI_LMBC_EMPR_MUW_EMP
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+      - CI_LMBC_EMPR_MUW_ACCT
+      - CI_LMBC_EMPR_MUW_TEST
+    employee-create-access-groups: 
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_EMP
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+      - CI_LMBC_EMPR_MUW_ACCT
+      - CI_LMBC_EMPR_MUW_TEST
+    employee-update-access-groups:  
+      - CI_LMBC_EMPR_MUW_QA
+      - CI_LMBC_EMPR_MUW_REPORTING
+      - CI_LMBC_EMPR_MUW_CLAIMS
+      - CI_LMBC_EMPR_MUW_CALLCENTER
+      - CI_LMBC_EMPR_MUW_IT
+      - CI_LMBC_EMPR_MUW_TECHNICIAN
+      - CI_LMBC_EMPR_MUW_UNDERWRITER
+      - CI_LMBC_EMPR_MUW_MANAGER
+      - CI_LMBC_EMPR_MUW_DIRECTOR
+      - CI_LMBC_EMPR_MUW_FILEFEED 
+      - CI_LMBC_EMPR_MUW_EMP
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER  
+      - CI_LMBC_EMPR_MUW_ACCT
+      - CI_LMBC_EMPR_MUW_TEST
+    employee-event-access-groups: 
+      - CI_LMBC_EMPR_MUW_EMPLOYEE_EVT
+      - CI_LMB_DEVELOPER
+      - CI_LMBC_EMPR_DEVELOPER
+      - CI_LMBC_EMPR_MUW_TEST
+      
+logging:
+  level: 
+    ROOT: INFO
+    org.springframework.security: INFO
+    org.hibernate: INFO
+    org.hibernate.type: INFO
+h2:
+  tcp:
+    enabled: true
+  web:
+    enabled: true    
+
+datasource:
+  app:
+    url: jdbc:h2:mem:employee_lcl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:db/h2/init/h2_setup.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  flyway:
+    url: jdbc:h2:mem:employee_lcl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:db/h2/init/h2_setup.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+flyway:
+  locations: classpath:db/migration/versioned,db/migration/repeatable,db/h2/post_create
+  placeholders:
+    BIGSTRING: VARCHAR2
+    DATETIME: TIMESTAMP
+    NUMBER11_2: NUMBER(11,2)
+    NUMBER5: NUMBER(5)
+    NUMBER10: NUMBER(10)
+    NUMBER8: NUMBER(8)
+    SETSCHEMA: SET SCHEMA
+    IDENTITY_1_1: AUTO_INCREMENT
+    IDENTITY_EMPLR_EMP_1_1: DEFAULT MUW_EMPLR_EMP_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_EMPLR_EMP_EVENT_1_1: DEFAULT MUW_EMPLR_EMP_SEQ.NEXTVAL PRIMARY KEY
+    NUMBER19: BIGINT
+    EMPLOYEE_PK:
+    EMPLR_EMP_EVENT_PK: 
+    iforacle: --
+    ifjunit: 
+    H2IGNORELINE: --
+    
+service:
+  employerServiceUrl: http://localhost:9001/services/v1/
+  employerServiceId: ci_lmbc_empr_muw_ui
+  employerServicePassword: ENC(C0EA700D285EDEE315A6BF5863B875A8)
+  contactServiceUrl: http://localhost:8089/services/v1/
+  

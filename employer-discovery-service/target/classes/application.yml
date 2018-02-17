@@ -1,0 +1,57 @@
+# Application Settings
+server:
+  port: ${port:8761}
+
+spring:
+  application:
+    name: CoreEmployerDiscoveryService
+
+# Spring logging settings
+logging:
+  level:
+    root: info
+
+# Actuator settings
+endpoints:
+  health:
+    sensitive: false
+
+management:
+  context-path: /manage
+
+# Eureka settings
+eureka:
+  client:
+    fetchRegistry: false
+    healthcheck:
+      enabled: true
+    register-with-eureka: false
+    service-url:
+      default-zone: ${discovery_protocol:http}://${discovery_host:localhost}:${discovery_port:8761}/eureka/
+  instance:
+    hostname: ${discovery_host:localhost}
+    nonSecurePort: ${server.port}
+    nonSecurePortEnabled: ${discovery_non_secure_port_enabled:true}
+    securePort: ${discovery_port:443}
+    securePortEnabled: ${discovery_secure_port_enabled:false}
+    leaseRenewalIntervalInSeconds: 20
+    leaseExpirationDurationInSeconds: 45
+    health-check-url-path: ${management.context-path}/health
+    status-page-url-path: ${management.context-path}/info
+    enable-self-preservation: false
+    
+security:
+  config:
+    admin-role: CI_LMBC_EMPR_DEVELOPER
+    user-role: CI_LMBC_EMPR_DISC_SVC
+    guest-role: CI_LMBC_EMPR_DEVELOPER
+    user-search-base: uid\=\{0},ou\=People,o\=Liberty,o\=Intranet
+    ssid-search-base: uid\=\{0},ou\=People,o\=Applications,o\=Intranet
+    group-search-base: cn\=Products,ou\=Groups,o\=Liberty,o\=intranet
+    ldap-url: ldaps://ldapsintdev-01.lmig.com:636
+    
+discovery:
+  client:
+    username: ci_lmbc_empr_disc_svc
+    password: ENC()
+    

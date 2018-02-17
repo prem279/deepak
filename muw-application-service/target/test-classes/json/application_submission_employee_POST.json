@@ -1,0 +1,9 @@
+{
+		"employerEmployeeId": 1,
+		"createDatetime" : "2016-11-15 16:42:34.073",
+		"employerId" : 1,
+		"employeeSSN" : 123456789,
+		"communicationMethodCode" : "PAPR",
+		"concurrencyQuality" : 3,
+		"createUserIdNumber" : "JUNIT"
+}

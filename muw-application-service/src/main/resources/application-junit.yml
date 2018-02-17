@@ -1,0 +1,90 @@
+spring:
+  jpa:
+    show-sql: true
+    database: H2
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level: 
+    ROOT: INFO
+    org.springframework.security: INFO
+    org.hibernate: INFO
+    org.hibernate.type: INFO
+    
+security:
+  config: 
+    application-read-access-groups:
+      - APPLICATION_READ
+    application-create-access-groups:
+      - APPLICATION_CREATE
+    application-update-access-groups:
+      - APPLICATION_UPDATE
+    applicant-read-access-groups:
+      - APPLICANT_READ
+    applicant-create-access-groups:
+      - APPLICANT_CREATE
+    applicant-update-access-groups:
+      - APPLICANT_UPDATE
+    employer-read-access-groups:
+      - EMPLOYER_READ
+    application-event-access-groups: 
+      - APPLICATION_EVENT
+
+h2:
+  tcp:
+    enabled: true
+  web:
+    enabled: true    
+
+datasource:
+  app:
+    url: jdbc:h2:mem:application_lcl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:db/h2/init/h2_setup.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  flyway:
+    url: jdbc:h2:mem:application_lcl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:db/h2/init/h2_setup.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+flyway:
+  locations: classpath:db/migration/versioned,db/migration/repeatable,db/h2/post_create
+  placeholders:
+    BIGSTRING: VARCHAR2
+    DATETIME: TIMESTAMP
+    NUMBER11_2: NUMBER(11,2)
+    NUMBER3: NUMBER(3)
+    NUMBER5_2: NUMBER(5,2)
+    SMALLINT: SMALLINT
+    NUMBER5: NUMBER(5)
+    NUMBER10: NUMBER(10)
+    SETSCHEMA: SET SCHEMA
+    IDENTITY_1_1: AUTO_INCREMENT
+    IDENTITY_APPLN_1_1: DEFAULT MUW_APPLN_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLN_APPLNT: DEFAULT MUW_APPLN_APPLNT_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLN_PROD_1_1: DEFAULT MUW_APPLN_PROD_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLN_APPLNT_PROD_1_1: DEFAULT MUW_APPLN_APPLNT_PROD_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLNT_COND_1_1: DEFAULT MUW_APPLNT_COND_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLNT_MDCT_1_1: DEFAULT MUW_APPLNT_MDCT_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLN_MEDL_QUALG_FC_1_1: DEFAULT MUW_APPLN_MEDL_QUALG_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_APPLN_EVENT_1_1: DEFAULT APPLN_EVENT_SEQ.NEXTVAL PRIMARY KEY
+    IDENTITY_QUES_RES_1_1: DEFAULT applnt_quesn_rspn_seq.NEXTVAL PRIMARY KEY
+    NUMBER19: BIGINT
+    APPLICATION_PK: 
+    APPLN_APPLNT_PK:
+    APPLICATION_PROD_PK:
+    APPLN_APPLNT_PROD_PK:
+    APPLICANT_COND_PK:
+    APPLICANT_MDCT_PK:
+    APPLN_MEDL_QUALG_FC_PK: 
+    APPLN_EVENT_PK: 
+    QUESTION_RESPONSE_PK: 
+    iforacle: --
+    ifh2: 
+
+service:
+  employeeServiceZuulUrl: http://dev1-lmbc-empr-muw-proxy-service.pdc.np.paas.lmig.com/muwemployee/services/v1/
+  

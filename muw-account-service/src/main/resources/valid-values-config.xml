@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:validValues xmlns:p="http://lmig.com/ci/reuse/vv"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<vvSet code="MUW_SUBMISSION_METHOD_CODES" name="MUW_SUBMISSION_METHOD_CODES" refreshRate="360">
+		<restService>
+			<source>rest/vv</source>
+			<code>code</code>
+			<value>values.en_US</value>
+			<list>items</list>
+			<suffix>MUW_SUBMISSION_METHOD_CODES</suffix>
+		</restService>
+	</vvSet>
+	
+	<vvSet code="MUW_EFFECTIVE_DATE_STRATEGY_CODES" name="MUW_EFFECTIVE_DATE_STRATEGY_CODES" refreshRate="360">
+		<restService>
+			<source>rest/vv</source>
+			<code>code</code>
+			<value>values.en_US</value>
+			<list>items</list>
+			<suffix>MUW_EFFECTIVE_DATE_STRATEGY_CODES</suffix>
+		</restService>
+	</vvSet>
+	
+	<vvSet code="MUW_UNIQUE_SUBMISSION_ID_CODES" name="MUW_UNIQUE_SUBMISSION_ID_CODES" refreshRate="360">
+		<restService>
+			<source>rest/vv</source>
+			<code>code</code>
+			<value>values.en_US</value>
+			<list>items</list>
+			<suffix>MUW_UNIQUE_SUBMISSION_ID_CODES</suffix>
+		</restService>
+	</vvSet>
+	
+	<vvSet code="MUW_PAYROLL_SYNCH_MODE_CODES" name="MUW_PAYROLL_SYNCH_MODE_CODES" refreshRate="360">
+		<restService>
+			<source>rest/vv</source>
+			<code>code</code>
+			<value>values.en_US</value>
+			<list>items</list>
+			<suffix>MUW_PAYROLL_SYNCH_MODE_CODES</suffix>
+		</restService>
+	</vvSet>
+	
+	<vvSet code="MUW_PAYROLL_SYNCH_DAY_CODES" name="MUW_PAYROLL_SYNCH_DAY_CODES" refreshRate="360">
+		<restService>
+			<source>rest/vv</source>
+			<code>code</code>
+			<value>values.en_US</value>
+			<list>items</list>
+			<suffix>MUW_PAYROLL_SYNCH_DAY_CODES</suffix>
+		</restService>
+	</vvSet>
+	
+	<vvSet code="MUW_FILE_FEED_FREQUENCY_CODES" name="MUW_FILE_FEED_FREQUENCY_CODES" refreshRate="360">
+		<restService>
+			<source>rest/vv</source>
+			<code>code</code>
+			<value>values.en_US</value>
+			<list>items</list>
+			<suffix>MUW_FILE_FEED_FREQUENCY_CODES</suffix>
+		</restService>
+	</vvSet>
+	
+	<vvSet code="MUW_FILE_FEED_MAILING_CODES" name="MUW_FILE_FEED_MAILING_CODES" refreshRate="360">
+		<restService>
+			<source>rest/vv</source>
+			<code>code</code>
+			<value>values.en_US</value>
+			<list>items</list>
+			<suffix>MUW_FILE_FEED_MAILING_CODES</suffix>
+		</restService>
+	</vvSet>
+	
+	<vvSet code="MUW_EXCHANGE_NAME_CODES" name="MUW_EXCHANGE_NAME_CODES" refreshRate="360">
+		<restService>
+			<source>rest/vv</source>
+			<code>code</code>
+			<value>values.en_US</value>
+			<list>items</list>
+			<suffix>MUW_EXCHANGE_NAME_CODES</suffix>
+		</restService>
+	</vvSet>
+	
+	<vvSet code="MUW_PRODUCT_CODES" name="MUW_PRODUCT_CODES" refreshRate="360">
+		<restService>
+			<source>rest/vv</source>
+			<code>code</code>
+			<value>values.en_US</value>
+			<list>items</list>
+			<suffix>MUW_PRODUCT_CODES</suffix>
+		</restService>
+	</vvSet>
+</p:validValues>

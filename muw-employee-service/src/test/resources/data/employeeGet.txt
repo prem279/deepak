@@ -1,0 +1,57 @@
+{
+  "employerEmployeeId": 3,
+  "employerId": 1,
+  "employeeSsn": "121192214",
+  "previousLastName": "Deepak",
+  "annualEarningsAmount": 25000,
+  "employeeClassCode": "CDE",
+  "employeeIdentificationNumber": "N0296171",
+  "hireDate": "2016-12-12",
+  "jobTitleName": "developer",
+  "communicationMethodCode": "EML",
+  "concurrencyQuantity": 3,
+  "firstName": "DEEPAK",
+  "lastName": "ragam",
+  "middleInitial": "g",
+  "createUserIdNumber": "JUNIT",
+  "lastUpdatedUserIdNumber": null,
+  "reportingLocationNumber": "D1234",
+  "mailingAddressSame": false,
+  "employeeHomeAddress": {
+    "addressId": 1,
+    "addressReasCode": "HOME",
+    "addressLine1Text": "123 Main Street",
+    "addressLine2Text": "",
+    "cityName": "Dover",
+    "stateProvinceCode": "NH",
+    "postalCode": "12345",
+    "countryCode": "USA"
+  },
+  "employeeMailingAddress": {
+    "addressId": 2,
+    "addressReasCode": "MAILG",
+    "addressLine1Text": "123 Main Street",
+    "addressLine2Text": "",
+    "cityName": "Dover",
+    "stateProvinceCode": "NH",
+    "postalCode": "12345",
+    "countryCode": "USA"
+  },
+  "employeeEmailAddress": {
+    "partyEmailAddressId": 1,
+    "electronicAddressReasonCode": "HOME",
+    "electronicAddressText": "ragamdeepak@gmail.com"
+  },
+  "employeeTelephone": {
+    "partyPhoneNumberId": 1,
+    "countryCode": "011",
+    "phoneNumber": "0745566546",
+    "extension": "4543",
+    "phoneNumberType": "MBL",
+    "timeZone": "EST"
+  },
+  "rowEffectiveDatetime": "2017-03-30 09:50:25.936",
+  "rowExpirationDatetime": "2017-03-30 09:50:25.936",
+  "createDatetime": "2017-03-30 09:50:25.936",
+  "lastUpdateDatetime": null
+}

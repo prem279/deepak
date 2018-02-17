@@ -1,0 +1,8 @@
+logging:
+  level: 
+    ROOT: INFO
+    org.springframework.security: INFO
+    
+security:
+  config:
+    ldap-url: ldaps://ldapskcintprd-01.kc.lmig.com:636

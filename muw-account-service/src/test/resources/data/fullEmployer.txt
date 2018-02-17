@@ -1,0 +1,156 @@
+{
+	"employerStakeholderLedgerNumber": "11",
+	"employerStakeholderSerialNumber": "000000",
+	"employerId": null,
+	"employerName": "Test",
+	"beginDate": "1901-12-01",
+	"cancellationDate": "",
+	"annvDate": "2000-12-01",
+	"alternateName": "",
+	"companyAccessCode": "",
+	"lastUpdateUserIdNum": "n0000000",
+	"createUserIdNum": "n0159479",
+	"rowEffectiveDatetime": "2016-11-11 15:38:14.263",
+	"rowExpirationDatetime": "2016-11-11 15:38:14.263",
+	"createDatetime": "2016-11-11 15:38:14.263",
+	"lastUpdateDatetime": "2016-11-11 15:38:14.263",
+	"concurrencyQuantity": 1,
+	"products": [{
+			"createUserIdNum": "n0000000",
+			"rowEffectiveDatetime": "2016-11-15 16:42:34.073",
+			"rowExpirationDatetime": "2016-11-15 16:42:34.073",
+			"createDatetime": "2016-11-15 16:42:34.073",
+			"lastUpdateDatetime": "2016-11-15 16:42:34.073",
+			"lastUpdateUserIdNum": "n0000000",
+			"productId": null,
+			"productSelected": true,
+			"productCode": "STD",
+			"beginDate": "2017-02-28",
+			"cancellationDate": "",
+			"labels": [
+	        {
+	          "languageCode": "ENG",
+	          "labelText": "Short Term Disability"
+	        },
+	        {
+	          "languageCode": "SPA",
+	          "labelText": "Incapacidad de Corto Plazo"
+	        }]
+		}, {
+			"createUserIdNum": "n0000000",
+			"rowEffectiveDatetime": "2016-11-15 16:42:34.073",
+			"rowExpirationDatetime": "2016-11-15 16:42:34.073",
+			"createDatetime": "2016-11-15 16:42:34.073",
+			"lastUpdateDatetime": "2016-11-15 16:42:34.073",
+			"lastUpdateUserIdNum": "n0000000",
+			"productId": null,
+			"productSelected": true,
+			"productCode": "BFL",
+			"beginDate": "2017-02-28",
+			"cancellationDate": "",
+			"labels": [
+		        {
+		          "languageCode": "ENG",
+		          "labelText": "Basic Dependent Life - Family"
+		        },
+		        {
+		          "languageCode": "SPA",
+		          "labelText": "Vida Dependiente Básica - Familia"
+		        }]
+		}
+	],
+	"addresses": {
+		"addressReasCode": "HOME",
+		"addressLine1Text": "150 Liberty Way",
+		"addressLine2Text": "Floor 4",
+		"cityName": "Dover",
+		"stateProvinceCode": "NH",
+		"postalCode": "12345",
+		"countryCode": "USA"
+	},
+	"preference": {
+		"employerPreferencesId": null,
+		"lastUpdateUserIdNum": "n0000000",
+		"createUserIdNum": "n0159479",
+		"rowEffectiveDatetime": "2016-11-11 15:38:14.263",
+		"rowExpirationDatetime": "2016-11-11 15:38:14.263",
+		"createDatetime": "2016-11-11 15:38:14.263",
+		"lastUpdateDatetime": "2016-11-11 15:38:14.263",
+		"initialEnrollmentCode": true,
+		"waitingPeriodDaysLimitQuantity": "",
+		"allowLateEnrollmentIndicator": false,
+		"allowFamilyStatusChangeIndicator": false,
+		"familyStatusChangeDaysLimitQuantity": 31,
+		"salaryIncreaseRequireEOIIndicator": false,
+		"annualEnrollmentIndicator": false,
+		"annualEnrollmentStartDate": "",
+		"annualEnrollmentPeriodQuantity": 0,
+		"singleSignOnIndicator": false,
+		"applicationReturnDaysLimitQuantity": 0,
+		"approveEffectiveDateCalculationRuleCode": "PAYROL",
+		"payrollSyncMode": "WEEKLY",
+		"payrollSyncDay": "WEDDAY",
+		"submissionMethodCode": null,
+		"applicantIdentificationMethodCode": "SSN",
+		"sendEmployerApprovalLetterIndicator": true,
+		"sendEmployerClosureLetterIndicator": true,
+		"sendEmployerDenialLetterIndicator": true,
+		"includeEffectiveDateApprovalEmployerIndicator": true,
+		"sendEmployerMedicalFollowupLetterIndicator": true,
+		"sendEmployeeApprovalLetterIndicator": true,
+		"sendEmployeeMedicalLetterIndicator": true,
+		"sendEmployeeDenialLetterIndicator": true,
+		"sendEmployeeClosureLetterIndicator": true,
+		"includeEffectiveDateApprovalEmployeeIndicator": true,
+		"sendEmployeeIncompleteLetterIndicator": true,
+		"sendEmployeeMedicalFollowupLetterIndicator": true,
+		"medicalReturnDaysLimitQuantity": 60,
+		"medicalGracePeriod": 30,
+		"returnIncompleteDays": 30,
+		"incompleteGracePeriod": 60,
+		"portabilityIndicator": false,
+		"portabilityPreferredRatesIndicator": false,
+		"portabilityConversionMailingServicesIndicator": false,
+		"conversionGracePeriod": 1,
+		"performanceGuaranteeIndicator": false,
+		"performanceGuaranteeDurationQuantity": 1,
+		"midMarketEmployerIndicator": false,
+		"fileFeedIndicator": false,
+		"fileFeedFrequencyCode": null,
+		"fileFeedMailingCode": null,
+		"exchangeIndicator": false,
+		"exchangeNameCode": null,
+		"disabilityPregnancyApprovalIndicator": false,
+		"fileFeedHRContact": "",
+		"employeeLabels": [{
+			"languageCode": "ENG",
+			"labelText": "Employee"
+        }, {
+			"languageCode": "SPA",
+			"labelText": "Empleado"
+        }],
+		"spouseLabels":  [{
+			"languageCode": "ENG",
+			"labelText": "Domestic Partner"
+        }, {
+			"languageCode": "SPA",
+			"labelText": "Socio doméstico"
+        }],
+		"displayProductAmountsIndicator": false,
+		"suppressEligibilityPrePopIndicator": true,
+	    "smokingQualifyingQuestionIndicator": true,
+	    "pregnancyQualifyingQuestionIndicator": true,
+	    "absenceQualifyingQuestionIndicator": false,
+	    "insuranceDeclinedQualifyingQuestionIndicator": true,
+	    "displayLocationIndicator": true,
+	    "newlyEligibleEmployeesIndicator": false,
+	    "employeeIdLabels": [{
+			"languageCode": "ENG",
+			"labelText": "Employee ID"
+        }, {
+			"languageCode": "SPA",
+			"labelText": "ID de empleado"
+        }],
+		"concurrencyQuantity": 1
+	}
+}

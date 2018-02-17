@@ -1,0 +1,204 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeDataSourceConfig",
+      "name": "datasource.app",
+      "sourceMethod": "public javax.sql.DataSource appDataSource() ",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeDataSourceConfig",
+      "name": "datasource.flyway",
+      "sourceMethod": "public javax.sql.DataSource flywayDataSource() ",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config",
+      "type": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.ServiceProperties",
+      "name": "service",
+      "type": "com.lmig.ci.lmbc.empr.muw.employee.config.ServiceProperties"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.RepoConfig",
+      "name": "spring.data.rest",
+      "type": "com.lmig.ci.lmbc.empr.muw.employee.config.RepoConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.admin-role",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.admin-role",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.employee-create-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.employee-create-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.employee-event-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.employee-event-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.employee-read-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.employee-read-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.employee-update-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.employee-update-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.group-search-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.group-search-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.guest-role",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.guest-role",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.ldap-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.ldap-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.service-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.service-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.service-password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.service-password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.ssid-search-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.ssid-search-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.user-role",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.user-role",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.user-search-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.MuwEmployeeSecurityProperties",
+      "name": "security.config.user-search-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.ServiceProperties",
+      "name": "service.contact-service-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.ServiceProperties",
+      "name": "service.contact-service-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.ServiceProperties",
+      "name": "service.employer-service-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.ServiceProperties",
+      "name": "service.employer-service-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.ServiceProperties",
+      "name": "service.employer-service-password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.ServiceProperties",
+      "name": "service.employer-service-password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.ServiceProperties",
+      "name": "service.employer-service-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.employee.config.ServiceProperties",
+      "name": "service.employer-service-url",
+      "type": "java.lang.String"
+    }
+  ]
+}

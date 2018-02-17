@@ -1,0 +1,19 @@
+{
+  "employerId": 1,
+  "employeeSsn": "123654879",
+  "previousLastName": "Deepak",
+  "annualEarningsAmount": 25000,
+  "employeeClassCode": "CDE",
+  "employeeIdentificationNumber": "N0296171",
+  "hireDate": null,
+  "jobTitleName": null,
+  "communicationMethodCode": "nhvdbh",
+  "concurrencyQuantity": 3,
+  "createUserIdNumber": "JUNIT",
+  "lastUpdatedUserIdNumber": null,
+  "reportingLocationNumber": null,
+  "rowEffectiveDatetime": "2017-03-08 14:22:37.087",
+  "rowExpirationDatetime": "2017-03-08 14:22:37.087",
+  "createDatetime": "2017-03-08 14:22:37.087",
+  "lastUpdateDatetime": null
+}

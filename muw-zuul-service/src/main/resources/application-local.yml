@@ -1,0 +1,43 @@
+logging:
+  level: 
+    ROOT: DEBUG
+    org.springframework.security: DEBUG
+    
+zuul:
+  debug:
+    request: true
+  routes:
+    muwemployer:
+      # If this is enabled, ensure the serviceId is disabled in application.yml
+      #url: http://localhost:9001
+    muwui:
+      url: http://localhost:5555/
+    validvalues:
+      url: http://localhost:8084/services/v2/valid-value-sets
+
+security:
+  config:
+    service-id: ci_lmbc_empr_muw_ui
+    service-password: ENC(1999F6415DC7FB8067B89C80661000B2)
+  oauth2:
+    client:
+      clientId: ci_meduw_dev
+      clientSecret: ENC(006466825AB27FE7F73E12B46AA87ACC70F7116EA2035CE7D65047DD350B7742C03E6590AE847376FFCFF8FA57FEF40E09BAF8917A6C53411B312DB010028DE43C1633B3687AA5663B900ABC2BF69C6B)
+      accessTokenUri: https://test-lmidp.libertymutual.com/as/token.oauth2
+      userAuthorizationUri: https://test-lmidp.libertymutual.com/as/authorization.oauth2
+      authenticationScheme: header
+      clientAuthenticationScheme: form
+      scope: openid,profile,address,email,phone,edit
+    resource:
+      userInfoUri: https://test-lmidp.libertymutual.com/idp/userinfo.openid
+    
+server:
+  ssl: 
+    key-store: src/main/resources/keystore.p12
+    key-store-password: mypassword
+    keyStoreType: PKCS12
+    keyAlias: tomcat
+
+fiddler:
+  trace-java: false
+  

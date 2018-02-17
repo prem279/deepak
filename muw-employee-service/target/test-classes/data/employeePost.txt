@@ -1,0 +1,61 @@
+{
+  
+  "employerId": 1,
+  "employeeSsn": "121192214",
+  "previousLastName": "Deepak",
+  "annualEarningsAmount": 25000,
+  "employeeClassCode": "CDE",
+  "employeeIdentificationNumber": "N0296171",
+  "hireDate": "2016-12-12",
+  "jobTitleName": "developer",
+  "firstName": "DEEPAK",
+  "lastName": "ragam",
+  "middleInitial": "g",
+  "communicationMethodCode": "EML",
+  "concurrencyQuantity": 3,
+  "createUserIdNumber": "JUNIT",
+  "lastUpdatedUserIdNumber": null,
+  "reportingLocationNumber": "D1234",
+  "rowEffectiveDatetime": "2017-03-09 11:10:48.929",
+  "rowExpirationDatetime": "2017-03-09 11:10:48.929",
+  "createDatetime": "2017-03-09 11:10:48.929",
+  "lastUpdateDatetime": null,
+   "employeeTelephone":  
+         {  
+            "countryCode":"011",
+            "extension":"4543",
+            "phoneNumber":"0745566546",
+            "phoneNumberType":"MBL",
+            "timeZone":"EST"
+         },
+      "employeeHomeAddress":  
+         {  
+            "addressReasCode":"HOME",
+            "addressLine1Text":"123 Main Street",
+            "addressLine2Text":"",
+            
+            "cityName":"Dover",
+            "stateProvinceCode":"NH",
+            "postalCode":"12345",
+            "countryCode":"USA"
+            
+         },
+      "employeeMailingAddress":  
+         {  
+            "addressReasCode":"MAILG",
+            "addressLine1Text":"123 Main Street",
+            "addressLine2Text":"",
+            
+            "cityName":"Dover",
+            "stateProvinceCode":"NH",
+            "postalCode":"12345",
+            "countryCode":"USA"
+            
+         },
+      "employeeEmailAddress":
+         {  
+            "electronicAddressReasonCode":"HOME",
+            "electronicAddressText":"ragamdeepak@gmail.com"
+         }
+      
+}

@@ -1,0 +1,60 @@
+dn: ou=People,dc=springframework,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: People
+
+dn: uid=guest,ou=People,dc=springframework,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Test Guest
+sn: Guest
+uid: guest
+userPassword: guest
+
+dn: uid=user,ou=People,dc=springframework,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Test User
+sn: User
+uid: user
+userPassword: user
+
+dn: uid=admin,ou=People,dc=springframework,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Test Admin
+sn: Admin
+uid: admin
+userPassword: admin
+
+dn: ou=groups,dc=springframework,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: cn=ci_lmbc_empr_guest,ou=groups,dc=springframework,dc=org
+objectclass: top
+objectclass: groupOfNames
+cn: ci_lmbc_empr_guests
+ou: ci_lmbc_empr_guest
+uniqueMember: uid=guest,ou=People,dc=springframework,dc=org
+
+dn: cn=ci_lmbc_empr_user,ou=groups,dc=springframework,dc=org
+objectclass: top
+objectclass: groupOfNames
+cn: ci_lmbc_empr_users
+ou: ci_lmbc_empr_user
+uniqueMember: uid=user,ou=People,dc=springframework,dc=org
+
+dn: cn=ci_lmbc_empr_admin,ou=groups,dc=springframework,dc=org
+objectclass: top
+objectclass: groupOfNames
+cn: ci_lmbc_empr_admins
+ou: ci_lmbc_empr_admin
+uniqueMember: uid=admin,ou=People,dc=springframework,dc=org

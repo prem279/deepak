@@ -1,0 +1,6 @@
+insert into tblUsers (user_pin, user_name, user_ext, admin, role, mgr_notification, email_addr, active) values ('N0128389', 'Jay Piwnicki', '38388', 1, 'CTMNGR', 0, 'jay.piwnicki@libertymutual.com', 1);
+insert into tblUsers (user_pin, user_name, user_ext, admin, role, mgr_notification, email_addr, active) values ('N0064975', 'Doreen MacKenzie', '38486', 1, 'CTMNGR', 0, 'doreen.mackenzie@libertymutual.com', 1);
+insert into tblUsers (user_pin, user_name, user_ext, admin, role, mgr_notification, email_addr, active) values ('N0048471', 'Brian Jewell', '38742', 1, 'CTPRDS', 0, 'brian.jewell@libertymutual.com', 1);
+insert into tblUsers (user_pin, user_name, user_ext, admin, role, mgr_notification, email_addr, active) values ('N0169955', 'Pushpalatha Perumal', null, 1, 'CTPRDS', 0, 'Pushpalatha.perumal@libertymutual.com', 1);
+insert into tblUsers (user_pin, user_name, user_ext, admin, role, mgr_notification, email_addr, active) values ('N0203550', 'Mallela, Naga', null, 1, 'CTPRDS', 0, 'naga.mallela@libertymutual.com', 1);
+insert into tblUsers (user_pin, user_name, user_ext, admin, role, mgr_notification, email_addr, active) values ('N0189985', 'Josh Merritt', null, 1, 'CTPRDS', 0, 'josh.merritt@libertymutual.com', 1);

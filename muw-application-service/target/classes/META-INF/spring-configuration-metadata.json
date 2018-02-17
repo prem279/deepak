@@ -1,0 +1,269 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationDataSourceConfig",
+      "name": "datasource.app",
+      "sourceMethod": "public javax.sql.DataSource appDataSource() ",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationDataSourceConfig",
+      "name": "datasource.flyway",
+      "sourceMethod": "public javax.sql.DataSource flywayDataSource() ",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationProductConfig",
+      "name": "products",
+      "type": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationProductConfig"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config",
+      "type": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.ServiceProperties",
+      "name": "service",
+      "type": "com.lmig.ci.lmbc.empr.muw.application.config.ServiceProperties"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationRepoConfig",
+      "name": "spring.data.rest",
+      "type": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationRepoConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationProductConfig",
+      "name": "products.product-configuration",
+      "type": "java.util.Map<java.lang.String,java.util.List<java.lang.String>>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationProductConfig",
+      "name": "products.product-configuration",
+      "type": "java.util.Map<java.lang.String,java.util.List<java.lang.String>>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.admin-role",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.admin-role",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.applicant-create-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.applicant-create-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.applicant-read-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.applicant-read-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.applicant-update-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.applicant-update-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.application-create-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.application-create-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.application-event-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.application-event-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.application-read-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.application-read-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.application-update-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.application-update-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.employer-read-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.employer-read-access-groups",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.file-feed-user-ids",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.file-feed-user-ids",
+      "type": "java.util.ArrayList<java.lang.String>"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.group-search-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.group-search-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.guest-role",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.guest-role",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.ldap-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.ldap-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.service-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.service-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.service-password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.service-password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.ssid-search-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.ssid-search-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.user-role",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.user-role",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.user-search-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.MuwApplicationSecurityProperties",
+      "name": "security.config.user-search-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.ServiceProperties",
+      "name": "service.employee-service-zuul-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.ServiceProperties",
+      "name": "service.employee-service-zuul-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.ServiceProperties",
+      "name": "service.employer-service-zuul-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.ServiceProperties",
+      "name": "service.employer-service-zuul-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.ServiceProperties",
+      "name": "service.muw-service-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.ServiceProperties",
+      "name": "service.muw-service-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.ServiceProperties",
+      "name": "service.muw-service-password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lmig.ci.lmbc.empr.muw.application.config.ServiceProperties",
+      "name": "service.muw-service-password",
+      "type": "java.lang.String"
+    }
+  ]
+}

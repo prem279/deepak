@@ -1,0 +1,57 @@
+${SETSCHEMA} MUWAPPLN_DB;
+
+${iforacle} ALTER TABLE APPLN_APPLNT_QUESN_RSPN_T MODIFY (crt_usr_id_num ${BIGSTRING}(50));
+${iforacle} ALTER TABLE APPLN_APPLNT_QUESN_RSPN_T MODIFY (last_updt_usr_id_num ${BIGSTRING}(50));
+
+${iforacle} ALTER TABLE APPLN_EVENT_T MODIFY (crt_usr_id_num ${BIGSTRING}(50));
+${iforacle} ALTER TABLE APPLN_EVENT_T MODIFY (last_updt_usr_id_num ${BIGSTRING}(50));
+
+${iforacle} ALTER TABLE MUW_APPLNT_COND_T MODIFY (crt_usr_id_num ${BIGSTRING}(50));
+${iforacle} ALTER TABLE MUW_APPLNT_COND_T MODIFY (last_updt_usr_id_num ${BIGSTRING}(50));
+
+${iforacle} ALTER TABLE MUW_APPLNT_MDCT_T MODIFY (crt_usr_id_num ${BIGSTRING}(50));
+${iforacle} ALTER TABLE MUW_APPLNT_MDCT_T MODIFY (last_updt_usr_id_num ${BIGSTRING}(50));
+
+${iforacle} ALTER TABLE MUW_APPLN_APPLNT_PROD_T MODIFY (crt_usr_id_num ${BIGSTRING}(50));
+${iforacle} ALTER TABLE MUW_APPLN_APPLNT_PROD_T MODIFY (last_updt_usr_id_num ${BIGSTRING}(50));
+
+${iforacle} ALTER TABLE MUW_APPLN_APPLNT_T MODIFY (crt_usr_id_num ${BIGSTRING}(50));
+${iforacle} ALTER TABLE MUW_APPLN_APPLNT_T MODIFY (last_updt_usr_id_num ${BIGSTRING}(50));
+
+${iforacle} ALTER TABLE MUW_APPLN_MEDL_QUALG_FC_T MODIFY (crt_usr_id_num ${BIGSTRING}(50));
+${iforacle} ALTER TABLE MUW_APPLN_MEDL_QUALG_FC_T MODIFY (last_updt_usr_id_num ${BIGSTRING}(50));
+
+${iforacle} ALTER TABLE MUW_APPLN_PROD_T MODIFY (crt_usr_id_num ${BIGSTRING}(50));
+${iforacle} ALTER TABLE MUW_APPLN_PROD_T MODIFY (last_updt_usr_id_num ${BIGSTRING}(50));
+
+${iforacle} ALTER TABLE MUW_APPLN_T MODIFY (crt_usr_id_num ${BIGSTRING}(50));
+${iforacle} ALTER TABLE MUW_APPLN_T MODIFY (last_updt_usr_id_num ${BIGSTRING}(50));
+
+
+${ifh2} ALTER TABLE APPLN_APPLNT_QUESN_RSPN_T ALTER COLUMN crt_usr_id_num ${BIGSTRING}(50);
+${ifh2} ALTER TABLE APPLN_APPLNT_QUESN_RSPN_T ALTER COLUMN last_updt_usr_id_num ${BIGSTRING}(50);
+
+${ifh2} ALTER TABLE APPLN_EVENT_T ALTER COLUMN crt_usr_id_num ${BIGSTRING}(50);
+${ifh2} ALTER TABLE APPLN_EVENT_T ALTER COLUMN last_updt_usr_id_num ${BIGSTRING}(50);
+
+${ifh2} ALTER TABLE MUW_APPLNT_COND_T ALTER COLUMN crt_usr_id_num ${BIGSTRING}(50);
+${ifh2} ALTER TABLE MUW_APPLNT_COND_T ALTER COLUMN last_updt_usr_id_num ${BIGSTRING}(50);
+
+${ifh2} ALTER TABLE MUW_APPLNT_MDCT_T ALTER COLUMN crt_usr_id_num ${BIGSTRING}(50);
+${ifh2} ALTER TABLE MUW_APPLNT_MDCT_T ALTER COLUMN last_updt_usr_id_num ${BIGSTRING}(50);
+
+${ifh2} ALTER TABLE MUW_APPLN_APPLNT_PROD_T ALTER COLUMN crt_usr_id_num ${BIGSTRING}(50);
+${ifh2} ALTER TABLE MUW_APPLN_APPLNT_PROD_T ALTER COLUMN last_updt_usr_id_num ${BIGSTRING}(50);
+
+${ifh2} ALTER TABLE MUW_APPLN_APPLNT_T ALTER COLUMN crt_usr_id_num ${BIGSTRING}(50);
+${ifh2} ALTER TABLE MUW_APPLN_APPLNT_T ALTER COLUMN last_updt_usr_id_num ${BIGSTRING}(50);
+
+${ifh2} ALTER TABLE MUW_APPLN_MEDL_QUALG_FC_T ALTER COLUMN crt_usr_id_num ${BIGSTRING}(50);
+${ifh2} ALTER TABLE MUW_APPLN_MEDL_QUALG_FC_T ALTER COLUMN last_updt_usr_id_num ${BIGSTRING}(50);
+
+${ifh2} ALTER TABLE MUW_APPLN_PROD_T ALTER COLUMN crt_usr_id_num ${BIGSTRING}(50);
+${ifh2} ALTER TABLE MUW_APPLN_PROD_T ALTER COLUMN last_updt_usr_id_num ${BIGSTRING}(50);
+
+${ifh2} ALTER TABLE MUW_APPLN_T ALTER COLUMN crt_usr_id_num ${BIGSTRING}(50);
+${ifh2} ALTER TABLE MUW_APPLN_T ALTER COLUMN last_updt_usr_id_num ${BIGSTRING}(50);
+

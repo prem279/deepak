@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<!-- Employer mapping -->
+	<mapping>
+		<class-a>com.lmig.ci.lmbc.empr.muw.account.api.EmployerResource
+		</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.account.domain.Employer</class-b>
+
+
+		<field>
+			<a>employerId</a>
+			<b>employerId</b>
+		</field>
+
+		<field>
+			<a>employerStakeholderLedgerNumber</a>
+			<b>stakeholderLedgerSerialNumberPk.employerStakeholderLedgerNumber
+			</b>
+		</field>
+
+		<field>
+			<a>employerStakeholderSerialNumber</a>
+			<b>stakeholderLedgerSerialNumberPk.employerStakeholderSerialNumber
+			</b>
+		</field>
+
+		<field>
+			<a>employerName</a>
+			<b>employerName</b>
+		</field>
+
+		<field>
+			<a>companyAccessCode</a>
+			<b>companyAccessCode</b>
+		</field>
+
+		<field>
+			<a>situsStateCode</a>
+			<b>situsStateCode</b>
+		</field>
+
+		<field>
+			<a>beginDate</a>
+			<b>beginDate</b>
+		</field>
+
+		<field>
+			<a>cancellationDate</a>
+			<b>cancellationDate</b>
+		</field>
+
+		<field>
+			<a>annvDate</a>
+			<b>annvDate</b>
+		</field>
+
+		<field>
+			<a>alternateName</a>
+			<b>alternateName</b>
+		</field>
+
+		<field>
+			<a>products</a>
+			<b>products</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+		<field>
+			<a>createUserIdNum</a>
+			<b>createUserIdNum</b>
+		</field>
+
+		<field>
+			<a>lastUpdateUserIdNum</a>
+			<b>lastUpdateUserIdNum</b>
+		</field>
+
+		<field>
+			<a>createDatetime</a>
+			<b>createDatetime</b>
+		</field>
+
+		<field>
+			<a>lastUpdateDatetime</a>
+			<b>lastUpdateDatetime</b>
+		</field>
+		
+		<field>
+			<a>preference</a>
+			<b>preference</b>
+		</field>
+
+		
+	</mapping>
+	
+	<mapping>
+		<class-a>com.lmig.ci.lmbc.empr.muw.account.api.PreferenceResource
+		</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.account.domain.Preference</class-b>
+		
+		<field>
+			<a>employerPreferencesId</a>
+			<b>employerPreferencesId</b>
+		</field>
+
+		<field>
+			<a>submissionMethodCode</a>
+			<b>submissionMethodCode</b>
+		</field>
+
+		<field>
+			<a>initialEnrollmentCode</a>
+			<b>initialEnrollmentCode</b>
+		</field>
+
+		<field>
+			<a>waitingPeriodDaysLimitQuantity</a>
+			<b>waitingPeriodDaysLimitQuantity</b>
+		</field>
+
+
+
+		<field>
+			<a>allowLateEnrollmentIndicator</a>
+			<b>allowLateEnrollmentIndicator</b>
+		</field>
+
+		<field>
+			<a>allowFamilyStatusChangeIndicator</a>
+			<b>allowFamilyStatusChangeIndicator</b>
+		</field>
+
+		<field>
+			<a>displayProductAmountsIndicator</a>
+			<b>displayProductAmountsIndicator</b>
+		</field>
+
+		<field>
+			<a>approveEffectiveDateCalculationRuleCode</a>
+			<b>approveEffectiveDateCalculationRuleCode</b>
+		</field>
+
+		<field>
+			<a>salaryIncreaseRequireEOIIndicator</a>
+			<b>salaryIncreaseRequireEOIIndicator</b>
+		</field>
+
+		<field>
+			<a>applicantIdentificationMethodCode</a>
+			<b>applicantIdentificationMethodCode</b>
+		</field>
+
+		<field>
+			<a>annualEnrollmentIndicator</a>
+			<b>annualEnrollmentIndicator</b>
+		</field>
+
+		<field>
+			<a>annualEnrollmentStartDate</a>
+			<b>annualEnrollmentStartDate</b>
+		</field>
+
+		<field>
+			<a>annualEnrollmentPeriodQuantity</a>
+			<b>annualEnrollmentPeriodQuantity</b>
+		</field>
+
+		<field>
+			<a>familyStatusChangeDaysLimitQuantity</a>
+			<b>familyStatusChangeDaysLimitQuantity</b>
+		</field>
+
+		<field>
+			<a>applicationReturnDaysLimitQuantity</a>
+			<b>applicationReturnDaysLimitQuantity</b>
+		</field>
+
+		<field>
+			<a>medicalReturnDaysLimitQuantity</a>
+			<b>medicalReturnDaysLimitQuantity</b>
+		</field>
+
+		<field>
+			<a>performanceGuaranteeIndicator</a>
+			<b>performanceGuaranteeIndicator</b>
+		</field>
+
+		<field>
+			<a>performanceGuaranteeDurationQuantity</a>
+			<b>performanceGuaranteeDurationQuantity</b>
+		</field>
+
+		<field>
+			<a>employeeLabels</a>
+			<b>employeeLabels</b>
+		</field>
+
+		<field>
+			<a>spouseLabels</a>
+			<b>spouseLabels</b>
+		</field>
+
+
+
+		<field>
+			<a>payrollSyncMode</a>
+			<b>payrollSyncMode</b>
+		</field>
+
+		<field>
+			<a>payrollSyncDay</a>
+			<b>payrollSyncDay</b>
+		</field>
+
+		<field>
+			<a>sendEmployerApprovalLetterIndicator</a>
+			<b>sendEmployerApprovalLetterIndicator</b>
+		</field>
+
+		<field>
+			<a>sendEmployerClosureLetterIndicator</a>
+			<b>sendEmployerClosureLetterIndicator</b>
+		</field>
+
+		<field>
+			<a>sendEmployerDenialLetterIndicator</a>
+			<b>sendEmployerDenialLetterIndicator</b>
+		</field>
+
+		<field>
+			<a>sendEmployeeApprovalLetterIndicator</a>
+			<b>sendEmployeeApprovalLetterIndicator</b>
+		</field>
+
+		<field>
+			<a>sendEmployeeMedicalLetterIndicator</a>
+			<b>sendEmployeeMedicalLetterIndicator</b>
+		</field>
+
+		<field>
+			<a>sendEmployeeDenialLetterIndicator</a>
+			<b>sendEmployeeDenialLetterIndicator</b>
+		</field>
+
+		<field>
+			<a>sendEmployeeClosureLetterIndicator</a>
+			<b>sendEmployeeClosureLetterIndicator</b>
+		</field>
+
+		<field>
+			<a>includeEffectiveDateApprovalEmployerIndicator</a>
+			<b>includeEffectiveDateApprovalEmployerIndicator</b>
+		</field>
+
+		<field>
+			<a>includeEffectiveDateApprovalEmployeeIndicator</a>
+			<b>includeEffectiveDateApprovalEmployeeIndicator</b>
+		</field>
+
+		<field>
+			<a>sendEmployeeIncompleteLetterIndicator</a>
+			<b>sendEmployeeIncompleteLetterIndicator</b>
+		</field>
+
+		<field>
+			<a>sendEmployerMedicalFollowupLetterIndicator</a>
+			<b>sendEmployerMedicalFollowupLetterIndicator</b>
+		</field>
+
+		<field>
+			<a>sendEmployeeMedicalFollowupLetterIndicator</a>
+			<b>sendEmployeeMedicalFollowupLetterIndicator</b>
+		</field>
+
+		<field>
+			<a>medicalGracePeriod</a>
+			<b>medicalGracePeriod</b>
+		</field>
+
+		<field>
+			<a>returnIncompleteDays</a>
+			<b>returnIncompleteDays</b>
+		</field>
+
+		<field>
+			<a>incompleteGracePeriod</a>
+			<b>incompleteGracePeriod</b>
+		</field>
+
+		<field>
+			<a>portabilityIndicator</a>
+			<b>portabilityIndicator</b>
+		</field>
+
+		<field>
+			<a>portabilityPreferredRatesIndicator</a>
+			<b>portabilityPreferredRatesIndicator</b>
+		</field>
+
+		<field>
+			<a>portabilityConversionMailingServicesIndicator</a>
+			<b>portabilityConversionMailingServicesIndicator</b>
+		</field>
+
+		<field>
+			<a>conversionGracePeriod</a>
+			<b>conversionGracePeriod</b>
+		</field>
+
+		<field>
+			<a>midMarketEmployerIndicator</a>
+			<b>midMarketEmployerIndicator</b>
+		</field>
+
+		<field>
+			<a>fileFeedIndicator</a>
+			<b>fileFeedIndicator</b>
+		</field>
+
+		<field>
+			<a>fileFeedFrequencyCode</a>
+			<b>fileFeedFrequencyCode</b>
+		</field>
+
+		<field>
+			<a>fileFeedMailingCode</a>
+			<b>fileFeedMailingCode</b>
+		</field>
+
+		<field>
+			<a>fileFeedHRContact</a>
+			<b>fileFeedHRContact</b>
+		</field>
+
+		<field>
+			<a>exchangeIndicator</a>
+			<b>exchangeIndicator</b>
+		</field>
+
+		<field>
+			<a>exchangeNameCode</a>
+			<b>exchangeNameCode</b>
+		</field>
+
+		<field>
+			<a>singleSignOnIndicator</a>
+			<b>singleSignOnIndicator</b>
+		</field>
+
+		<field>
+			<a>disabilityPregnancyApprovalIndicator</a>
+			<b>disabilityPregnancyApprovalIndicator</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+		<field>
+			<a>createUserIdNum</a>
+			<b>createUserIdNum</b>
+		</field>
+		<field>
+			<a>lastUpdateUserIdNum</a>
+			<b>lastUpdateUserIdNum</b>
+		</field>
+		<field>
+			<a>createDatetime</a>
+			<b>createDatetime</b>
+		</field>
+		<field>
+			<a>lastUpdateDatetime</a>
+			<b>lastUpdateDatetime</b>
+		</field>
+		<field>
+			<a>suppressEligibilityPrePopIndicator</a>
+			<b>suppressEligibilityPrePopIndicator</b>
+		</field>
+		<field>
+			<a>smokingQualifyingQuestionIndicator</a>
+			<b>smokingQualifyingQuestionIndicator</b>
+		</field>
+		<field>
+			<a>pregnancyQualifyingQuestionIndicator</a>
+			<b>pregnancyQualifyingQuestionIndicator</b>
+		</field>
+		<field>
+			<a>absenceQualifyingQuestionIndicator</a>
+			<b>absenceQualifyingQuestionIndicator</b>
+		</field>
+		<field>
+			<a>insuranceDeclinedQualifyingQuestionIndicator</a>
+			<b>insuranceDeclinedQualifyingQuestionIndicator</b>
+		</field>
+		<field>
+			<a>displayLocationIndicator</a>
+			<b>displayLocationIndicator</b>
+		</field>
+		<field>
+			<a>newlyEligibleEmployeesIndicator</a>
+			<b>newlyEligibleEmployeesIndicator</b>
+		</field>
+		<field>
+			<a>employeeIdLabels</a>
+			<b>employeeIdLabels</b>
+		</field>
+		
+<!-- 		<field> -->
+<!-- 			<a>employeeLabelCode</a> -->
+<!-- 			<b>employeeLabelCode</b> -->
+<!-- 		</field> -->
+		
+	</mapping>
+
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.account.api.EoiProductResource
+		</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.account.domain.EoiProduct</class-b>
+
+		<field>
+			<a>productCode</a>
+			<b>productCode</b>
+		</field>
+
+		<field>
+			<a>productId</a>
+			<b>productId</b>
+		</field>
+
+		<field>
+			<a>labels</a>
+			<b>labels</b>
+		</field>
+
+		<field>
+			<a>cancellationDate</a>
+			<b>cancellationDate</b>
+		</field>
+
+		<field>
+			<a>beginDate</a>
+			<b>beginDate</b>
+		</field>
+
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+		<field>
+			<a>createUserIdNum</a>
+			<b>createUserIdNum</b>
+		</field>
+
+		<field>
+			<a>lastUpdateUserIdNum</a>
+			<b>lastUpdateUserIdNum</b>
+		</field>
+
+		<field>
+			<a>createDatetime</a>
+			<b>createDatetime</b>
+		</field>
+
+		<field>
+			<a>lastUpdateDatetime</a>
+			<b>lastUpdateDatetime</b>
+		</field>
+
+	</mapping>
+
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.account.api.AccountServiceEventLogResource
+		</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.account.domain.AccountServiceEventLog
+		</class-b>
+
+		<field>
+			<a>eventId</a>
+			<b>eventId</b>
+		</field>
+
+		<field>
+			<a>subjectAreaId</a>
+			<b>subjectAreaId</b>
+		</field>
+
+		<field>
+			<a>subjectAreaCode</a>
+			<b>subjectAreaCode</b>
+		</field>
+
+		<field>
+			<a>changeEventCode</a>
+			<b>changeEventCode</b>
+		</field>
+
+		<field>
+			<a>businessEventCode</a>
+			<b>businessEventCode</b>
+		</field>
+
+		<field>
+			<a>beforeEventData</a>
+			<b>beforeEventData</b>
+		</field>
+
+		<field>
+			<a>changeSet</a>
+			<b>changeSet</b>
+		</field>
+
+		<field>
+			<a>afterEventData</a>
+			<b>afterEventData</b>
+		</field>
+
+		<field>
+			<a>processedIndicator</a>
+			<b>processedIndicator</b>
+		</field>
+
+		<field>
+			<a>processedTime</a>
+			<b>processedTime</b>
+		</field>
+
+	</mapping>
+
+	<mapping>
+
+		<class-a>com.lmig.ci.lmbc.empr.muw.account.api.LabelResource</class-a>
+		<class-b>com.lmig.ci.lmbc.empr.muw.account.domain.Label</class-b>
+
+		<field>
+			<a>labelId</a>
+			<b>labelId</b>
+		</field>
+		
+		<field>
+			<a>languageCode</a>
+			<b>languageCode</b>
+		</field>
+		
+		<field>
+			<a>labelText</a>
+			<b>labelText</b>
+		</field>
+		
+		<field>
+			<a>concurrencyQuantity</a>
+			<b>concurrencyQuantity</b>
+		</field>
+
+		<field>
+			<a>createUserIdNum</a>
+			<b>createUserIdNum</b>
+		</field>
+
+		<field>
+			<a>lastUpdateUserIdNum</a>
+			<b>lastUpdateUserIdNum</b>
+		</field>
+
+		<field>
+			<a>createDatetime</a>
+			<b>createDatetime</b>
+		</field>
+
+		<field>
+			<a>lastUpdateDatetime</a>
+			<b>lastUpdateDatetime</b>
+		</field>
+		
+	</mapping>
+
+</mappings>

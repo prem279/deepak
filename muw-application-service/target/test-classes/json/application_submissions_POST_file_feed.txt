@@ -1,0 +1,44 @@
+{
+	"application": {
+		"employerId": 1,
+		"applicationReceivedDate": "2017-02-13",
+		"reasonCode": "asdf",
+		"submissionMethodCode": "FILF",
+		"applicants": [
+		{
+			"applicationRoleCode": "SPUSE",
+			"applicantProducts": [{
+				"productCode": "OSL",
+				"requestedProductBeginDate": "2016-11-15"
+			}]
+		}]
+	},
+	"employee": {
+	  "employerId": 1,
+	  "employeeSsn": "633456781",
+	  "hireDate": "2016-12-12",
+	  "firstName": "DEEPAK",
+	  "lastName": "ragam",
+	  "communicationMethodCode": "EML",
+		  "employeeHomeAddress":  
+			 {  
+				"addressReasCode":"HOME",
+				"addressLine1Text":"123 Main Street",
+				"cityName":"Dover",
+				"stateProvinceCode":"NH",
+				"postalCode":"12345",
+				"countryCode":"USA"
+				
+			 },
+		  "employeeMailingAddress":  
+			 {  
+				"addressReasCode":"HOME",
+				"addressLine1Text":"123 Main Street",
+				"cityName":"Dover",
+				"stateProvinceCode":"NH",
+				"postalCode":"12345",
+				"countryCode":"USA"
+				
+			 }
+	}
+}

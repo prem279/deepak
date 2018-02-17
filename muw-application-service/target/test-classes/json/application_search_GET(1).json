@@ -1,0 +1,99 @@
+{
+		"applicationId": 1,
+		"employerId": 1,
+		"employerEmployeeId" : 2,
+		"applicationReceivedDate": "2017-02-13",
+		"familySttsChangeEventDate": "2017-02-13",
+		"reasonCode": "asdf",
+		"submissionMethodCode": "ONLN",
+		"applicationProducts": [{
+			"applicationProductId": 1,
+			"productCode": "STD"
+		},
+		{
+			"applicationProductId": 2,
+			"productCode": "ABC"
+		},
+		{
+			"applicationProductId": 3,
+			"productCode": "LTD"
+		}],
+		"applicants": [{
+			"applicationApplicantId": 1,
+			"applicationRoleCode": "EMPLY",
+			"applicantSSN": "123456789",
+			"birthDate": "2017-02-13",
+			"firstName": "Robert",
+			"middleInitial": "J",
+			"lastName": "Vila",
+			"birthCityName": "Miami",
+			"birthStateProvinceCode": "FL",
+			"birthCountryCode": "USA",
+			"genderCode": "M",
+			"heightInchQuantity": 70,
+			"weightQuantity": 190,
+			"conditions": [{
+				"conditionCode": "ABCD",
+				"conditionRecoveryDate": "2012-12-27",
+				"conditionOnsetDate": "2016-12-25",
+				"treatmentHealthFullName": "Jennings",
+				"treatmentReceivedText": "laughter",
+				"medications": [{
+					"medicationCode": "ABCD",
+					"prescriptionDate": "2016-12-12"
+				}]
+			}],
+			"applicantProducts": [{
+				"applicationApplicantProductId": 1,
+				"productCode": "ABC",
+				"statusDeterminationDate": "2013-04-04",
+				"statusTypeCode": "MANREV",
+				"productApproveEffectiveDate": "2016-12-12"
+			},
+			{
+				"applicationApplicantProductId": 2,
+				"productCode": "DEF",
+				"statusDeterminationDate": "2017-12-12",
+				"statusTypeCode": "APPRVE",
+				"productApproveEffectiveDate": "2016-12-12"
+			}]
+		},
+		{
+			"applicationApplicantId": 2,
+			"applicationRoleCode": "SPUSE",
+			"applicantSSN": "987654321",
+			"birthDate": "2017-02-13",
+			"firstName": "Susan",
+			"middleInitial": "",
+			"lastName": "Vila",
+			"birthCityName": "Miami",
+			"birthStateProvinceCode": "FL",
+			"birthCountryCode": "USA",
+			"genderCode": "M",
+			"heightInchQuantity": 70,
+			"weightQuantity": 190,
+			"conditions": [],
+			"applicantProducts": [{
+				"applicationApplicantProductId": 3,
+				"productCode": "GHI",
+				"statusDeterminationDate": "2016-11-15",
+				"statusTypeCode": "DENIED",
+				"productApproveEffectiveDate": "2016-12-12"
+			},
+			{
+				"applicationApplicantProductId": 4,
+				"productCode": "JKL",
+				"statusDeterminationDate": "2016-11-15",
+				"statusTypeCode": "DENIED",
+				"productApproveEffectiveDate": "2016-11-15"
+				}]
+		}],
+		"applicationMedicalFactors" : [{
+			"applicationMedicalFactorId": 5,
+			"applicationRoleCode" : "ABCDE",
+			"medicalFactorQuestionCode" : "ABCDEF",
+			"medicalFactorText": "Here is the medical factor text",
+			"alternativeMedicalFactorQuestionCode" : "FEDCBA",
+			"medicalFactorIndicator" : true
+		}]	
+}

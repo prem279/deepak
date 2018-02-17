@@ -1,0 +1,45 @@
+{
+	"partyId": 243,
+	"partyType": "EMPLYR",
+	"organisationName": "Test",
+	"organisationType": "CORP",
+	"namePrefix": null,
+	"firstName": null,
+	"middleName": null,
+	"lastName": null,
+	"nameSuffix": null,
+	"partyRoles": [],
+	"partyPhoneNumbers": [],
+	"partyReferences": [{
+			"partyReferenceId": 423,
+			"referenceType": "MUWEMP",
+			"referenceNumber": "5",
+			"links": []
+		}, {
+			"partyReferenceId": 424,
+			"referenceType": "DIVSRL",
+			"referenceNumber": "11000000",
+			"links": []
+		}
+	],
+	"partyPhysicalAddresses": [{
+			"partyAddressId": 236,
+			"addressReasonCode": "HOME",
+			"addressLine1Text": "150 Liberty Way",
+			"addressLine2Text": "Floor 4",
+			"addressLine3Text": null,
+			"cityName": "Dover",
+			"stateProvienceCode": "NH",
+			"postalCode": "12345",
+			"countryCode": "USA",
+			"partyPhysicalAddressActy": [{
+					"partyPhysicalAddressActivityId": 161,
+					"activityType": "MUWPA",
+					"active": "Y"
+				}
+			]
+		}
+	],
+	"partyEmailAddresses": [],
+	"links": []
+}

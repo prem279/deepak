@@ -1,0 +1,20 @@
+---
+applications:
+- name: ${inject.cf.name}
+  routes:
+  - route: ${inject.cf.name}.${inject.cf.domain}
+  instances: ${inject.cf.instances}
+  memory: ${inject.cf.mem}
+  timeout: 180
+  env:
+    discovery_host: ${inject.cf.env.discovery.host}
+    discovery_non_secure_port_enabled: ${inject.cf.env.discovery.non-secure-port-enabled}
+    discovery_port: ${inject.cf.env.discovery.port}
+    discovery_protocol: ${inject.cf.env.discovery.protocol}
+    discovery_secure_port_enabled: ${inject.cf.env.discovery.secure-port-enabled}
+    JAVA_OPTS: ${inject.cf.env.javaopts}
+    NEW_RELIC_APP_NAME: ${inject.deploy.newrelic.name}
+  services:
+  - ${inject.cf.keyservice}
+  - logging
+  - newrelic

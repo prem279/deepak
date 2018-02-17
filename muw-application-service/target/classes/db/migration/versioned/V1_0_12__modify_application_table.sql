@@ -1,0 +1,4 @@
+/* SET SCHEMA FOR SESSION */
+${SETSCHEMA} MUWAPPLN_DB;
+
+ALTER TABLE muw_appln_prod_t DROP COLUMN stts_typ_cde;

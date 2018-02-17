@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:validValues xmlns:p="http://lmig.com/ci/reuse/vv"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<vvSet code="MUW_SUBMISSION_METHOD_CODES" name="Medical Underwriting Submission Method Codes">
+		<staticVv>
+			<vvItem code="BOTH" value="Both Online and Paper" language="en_US" />
+			<vvItem code="ONLN" value="Online Only" language="en_US" />
+			<vvItem code="PAPR" value="Paper Only" language="en_US" />
+
+		</staticVv>
+	</vvSet>
+
+	<vvSet code="MUW_EFFECTIVE_DATE_STRATEGY_CODES" name="Medical Underwriting Effective Date Strategy Codes">
+		<staticVv>
+			<vvItem code="MANUAL" value="Manual" language="en_US" />
+			<vvItem code="APPROV" value="Set to Approval Date" language="en_US" />
+			<vvItem code="FRSTMO" value="Set to Day 1 of Next Month"
+				language="en_US" />
+			<vvItem code="PAYROL" value="Set to next Payroll Date"
+				language="en_US" />
+
+
+		</staticVv>
+	</vvSet>
+
+	<vvSet code="MUW_UNIQUE_SUBMISSION_ID_CODES" name="Medical Underwriting Unique Submission ID Codes">
+		<staticVv>
+			<vvItem code="BTH" value="Both Empid and SSN" language="en_US" />
+			<vvItem code="EID" value="EmpID Only" language="en_US" />
+			<vvItem code="SSN" value="SSN Only" language="en_US" />
+
+		</staticVv>
+	</vvSet>
+
+	<vvSet code="MUW_PAYROLL_SYNCH_MODE_CODES" name="Medical Underwriting Payroll Synch Mode Codes">
+		<staticVv>
+			<vvItem code="WEEKLY" value="Weekly" language="en_US" />
+			<vvItem code="BIWKLY" value="Bi-Weekly" language="en_US" />
+			<vvItem code="MNTHLY" value="Monthly" language="en_US" />
+
+		</staticVv>
+	</vvSet>
+	<vvSet code="MUW_PAYROLL_SYNCH_DAY_CODES" name="Medical Underwriting Payroll Synch Day Codes">
+		<staticVv>
+			<vvItem code="MONDAY" value="Monday" language="en_US" />
+			<vvItem code="TUSDAY" value="Tuesday" language="en_US" />
+			<vvItem code="WEDDAY" value="Wednesday" language="en_US" />
+			<vvItem code="THRDAY" value="Thursday" language="en_US" />
+			<vvItem code="FRIDAY" value="Friday" language="en_US" />
+			<vvItem code="SATDAY" value="Saturday" language="en_US" />
+			<vvItem code="SUNDAY" value="Sunday" language="en_US" />
+		</staticVv>
+	</vvSet>
+	<vvSet code="MUW_FILE_FEED_FREQUENCY_CODES" name="Medical Underwriting File Feed Frequency Codes">
+		<staticVv>
+			<vvItem code="ANNUAL" value="Annually" language="en_US" />
+			<vvItem code="BIMNTH" value="Bi-Monthly" language="en_US" />
+			<vvItem code="BIWKLY" value="Bi-Weekly" language="en_US" />
+			<vvItem code="MNTHLY" value="Monthly" language="en_US" />
+			<vvItem code="WEEKLY" value="Weekly" language="en_US" />
+
+		</staticVv>
+	</vvSet>
+	<vvSet code="MUW_FILE_FEED_MAILING_CODES" name="Medical Underwriting File Feed Mailing Codes">
+		<staticVv>
+			<vvItem code="EMAIL" value="Email" language="en_US" />
+			<vvItem code="EWLTR" value="Email with application attached"
+				language="en_US" />
+			<vvItem code="PAPER" value="Paper Package" language="en_US" />
+
+		</staticVv>
+	</vvSet>
+	<vvSet code="MUW_EXCHANGE_NAME_CODES" name="Medical Underwriting Exchange Name Codes">
+		<staticVv>
+			<vvItem code="MMX" value="Mercer Marketplace" language="en_US" />
+			<vvItem code="AON" value="AON" language="en_US" />
+			<vvItem code="TWS" value="Towers" language="en_US" />
+
+		</staticVv>
+	</vvSet>
+
+	<vvSet code="MUW_PRODUCT_CODES" name="Medical Underwriting Product Codes">
+		<staticVv>
+			<vvItem businessEffectiveDate="1900-01-01 05:00"
+				businessExpirationDate="9999-12-31 04:59" code="BCL"
+				value="Basic Dependent Life - Child" language="en_US" />
+			<vvItem businessEffectiveDate="1900-01-01 05:00"
+				businessExpirationDate="9999-12-31 04:59" code="BEL"
+				value="Basic Life - Employee" language="en_US" />
+			<vvItem businessEffectiveDate="1900-01-01 05:00"
+				businessExpirationDate="9999-12-31 04:59" code="BFL"
+				value="Basic Dependent Life - Family" language="en_US" />
+			<vvItem businessEffectiveDate="1900-01-01 05:00"
+				businessExpirationDate="9999-12-31 04:59" code="BSL"
+				value="Basic Dependent Life - Spouse" language="en_US" />
+			<vvItem businessEffectiveDate="1900-01-01 05:00"
+				businessExpirationDate="9999-12-31 04:59" code="LTD"
+				value="Long Term Disability" language="en_US" />
+			<vvItem businessEffectiveDate="1900-01-01 05:00"
+				businessExpirationDate="9999-12-31 04:59" code="OCL"
+				value="Optional Dependent Life - Child" language="en_US" />
+			<vvItem businessEffectiveDate="1900-01-01 05:00"
+				businessExpirationDate="9999-12-31 04:59" code="OEL"
+				value="Optional Life - Employee" language="en_US" />
+			<vvItem businessEffectiveDate="1900-01-01 05:00"
+				businessExpirationDate="9999-12-31 04:59" code="OFL"
+				value="Optional Dependent Life - Family" language="en_US" />
+			<vvItem businessEffectiveDate="1900-01-01 05:00"
+				businessExpirationDate="9999-12-31 04:59" code="OSL"
+				value="Optional Dependent Life - Spouse" language="en_US" />
+			<vvItem businessEffectiveDate="1900-01-01 05:00"
+				businessExpirationDate="9999-12-31 04:59" code="STD"
+				value="Short Term Disability" language="en_US" />
+			<vvItem businessEffectiveDate="1900-01-01 05:00"
+				businessExpirationDate="9999-12-31 04:59" code="GCI"
+				value="Group Critical Illness" language="en_US" />
+		</staticVv>
+	</vvSet>
+
+
+</p:validValues>

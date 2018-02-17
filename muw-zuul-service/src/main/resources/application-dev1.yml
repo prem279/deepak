@@ -1,0 +1,30 @@
+logging:
+  level: 
+    ROOT: DEBUG
+    org.springframework.security: DEBUG
+    
+zuul:
+  debug:
+    request: true
+  routes:
+    muwui:
+      url: https://dev1-lmbc-empr-muw-user-interface.pdc.np.paas.lmig.com
+    validvalues:
+      url: https://dev1-lmbc-empr-valid-value-service.pdc.np.paas.lmig.com/services/v2/valid-value-sets
+
+security:
+  config:
+    service-id: ci_lmbc_empr_muw_ui
+    service-password: ENC(A71410CE6CC449E4701B446C7360D5F7)
+  oauth2:
+    client:
+      clientId: ci_meduw_dev
+      clientSecret: ENC(FAB0A48B7181930FD66EE127D49DC289800F0371A20DB5133AD8E8F9777F6E492E190453E4110EA918F0471BB5949DBA24597E4F8979B2F3E097740A74C1A16EA9423027D55C231DE0E9BEE29A30610F)
+      accessTokenUri: https://test-lmidp.libertymutual.com/as/token.oauth2
+      userAuthorizationUri: https://test-lmidp.libertymutual.com/as/authorization.oauth2
+      authenticationScheme: header
+      clientAuthenticationScheme: form
+      scope: openid,profile,address,email,phone,edit
+    resource:
+      userInfoUri: https://test-lmidp.libertymutual.com/idp/userinfo.openid
+      

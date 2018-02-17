@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Configuration status="WARN">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<!-- ibatis and other apache tools -->
+		<Logger name="org.apache" level="info" additivity="false" />
+
+		<!-- bean validator in this app context -->
+		<Logger name="org.hibernate" level="info" additivity="false" />
+
+		<!-- mybatis-spring -->
+		<Logger name="org.mybatis" level="info" additivity="false" />
+
+		<!-- spring -->
+		<Logger name="org.springframework" level="info" additivity="false" />
+
+		<!-- Swagger -->
+		<Logger name="springfox" level="info" additivity="false" />
+
+		<Root level="debug">
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>

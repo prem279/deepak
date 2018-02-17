@@ -1,0 +1,48 @@
+spring:
+  jpa:
+    show-sql: true
+    database: Oracle
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level: 
+    ROOT: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate: DEBUG
+    org.hibernate.type: DEBUG   
+
+datasource:
+  app:
+    url: jdbc:oracle:thin:@vxpit-c5lb0012.lmig.com:1528:clb0p12t
+    username: MUWEMPSVCAP
+    password: ENC(85275EE99F78D685B4AFD241E0FE806F)
+    driver-class-name: oracle.jdbc.OracleDriver
+  flyway:
+    url: jdbc:oracle:thin:@vxpit-c5lb0012.lmig.com:1528:clb0p12t
+    username: MUWEMP_DB
+    password: ENC(FDF407187CA85AF77DA5E913E693FA34)
+    driver-class-name: oracle.jdbc.OracleDriver
+
+flyway:
+  locations: classpath:db/migration/versioned,db/migration/repeatable
+  placeholders:
+    BIGSTRING: VARCHAR2
+    NUMBER8: NUMBER(8)
+    DATETIME: TIMESTAMP
+    NUMBER11_2: NUMBER(11,2)
+    NUMBER5: NUMBER(5)
+    NUMBER10: NUMBER(10)
+    SETSCHEMA: ALTER SESSION SET CURRENT_SCHEMA =
+    IDENTITY_EMPLR_EMP_1_1: 
+    NUMBER19: NUMBER(19)
+    EMPLOYEE_PK: ALTER TABLE emplr_emp_t ADD CONSTRAINT pk_muw_emplr_emp_t PRIMARY KEY(emplr_emp_id);
+    iforacle:
+    ifjunit: --
+    H2IGNORELINE: 
+
+service:
+  employerServiceUrl: https://test1-lmbc-empr-muw-account-service.pdc.np.paas.lmig.com/services/v1/
+  employerServiceId: ci_lmbc_empr_muw_ui
+  employerServicePassword: ENC(6458A6D06B476369D8975A0CCA926769)        

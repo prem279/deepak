@@ -1,0 +1,142 @@
+{
+	"application": {
+		"employerId": 1,
+		"applicationReceivedDate": "2017-02-13",
+		"familySttsChangeEventDate": "2017-02-13",
+		"reasonCode": "asdf",
+		"submissionMethodCode": "ONLN",
+		"createDatetime": "2016-11-15 16:42:34.073",
+		"applicationProducts": [{
+			"productCode": "STD",
+			"statusTypeCode": "DENIED",
+			"lastUpdateUserIdNum": "JUNIT",
+			"createDatetime": "2016-11-15 16:42:34.073",
+			"lastUpdateDatetime": "2016-11-15 16:42:34.073"
+		},
+		{
+			"productCode": "ABC",
+			"statusTypeCode": "DENIED",
+			"lastUpdateUserIdNum": "JUNIT",
+			"createDatetime": "2016-11-15 16:42:34.073",
+			"lastUpdateDatetime": "2016-11-15 16:42:34.073"
+		},
+		{
+			"productCode": "LTD",
+			"lastUpdateUserIdNum": "JUNIT",
+			"createDatetime": "2016-11-15 16:42:34.073",
+			"lastUpdateDatetime": "2016-11-15 16:42:34.073"
+		}],
+		"applicants": [{
+			"applicationRoleCode": "EMPLY",
+			"applicantSSN": "123456789",
+			"birthDate": "2017-02-13",
+			"firstName": "Robert",
+			"middleInitial": "J",
+			"lastName": "Vila",
+			"birthCityName": "Miami",
+			"birthStateProvinceCode": "FL",
+			"birthCountryCode": "USA",
+			"genderCode": "M",
+			"heightInchQuantity": 70,
+			"weightQuantity": 190,
+			"conditions": [{
+				"conditionCode": "ABCD",
+				"conditionRecoveryDate": "2012-12-27",
+				"conditionOnsetDate": "2016-12-25",
+				"treatmentHealthFullName": "Jennings",
+				"treatmentReceivedText": "laughter",
+				"lastUpdateUserIdNum": "N0296170",
+				"createDatetime": "2016-11-15 16:42:34.073",
+				"medications": [{
+					"medicationCode": "ABCD",
+					"createDatetime": "2016-11-15 16:42:34.073",
+					"prescriptionDate": "2016-12-12"
+				}],
+				"questionnaireResponses": [{
+					"conditionSequence": "0001",
+					"questionTypeCode": "T2",
+					"questionCode": "QUES1",
+					"additionalQuestionCode": "ADDQ6",
+					"responseAmount": "15",
+					"responseDate": "2010-01-01",
+					"responseIndicator": 1,
+					"responseQuantity": 1,
+					"responseText": "I had a condition?",
+					"lastUpdateUserIdNum": "JUNIT",
+					"createDatetime": "2016-11-15 16:42:34.073",
+					"lastUpdateDatetime": "2016-11-15 16:42:34.073"
+				}]
+				
+			}],
+			"applicantProducts": [{
+				"productCode": "ABC",
+				"statusDeterminationDate": "2013-04-04",
+				"statusTypeCode": "MANREV",
+				"productApproveEffectiveDate": "2016-12-12",
+				"lastUpdateUserIdNum": "JUNIT",
+				"createDatetime": "2016-11-15 16:42:34.073",
+				"lastUpdateDatetime": "2016-11-15 16:42:34.073"
+			},
+			{
+				"productCode": "DEF",
+				"statusDeterminationDate": "2017-12-12",
+				"statusTypeCode": "APPRVE",
+				"productApproveEffectiveDate": "2016-12-12",
+				"lastUpdateUserIdNum": "JUNIT",
+				"createDatetime": "2016-11-15 16:42:34.073",
+				"lastUpdateDatetime": "2016-11-15 16:42:34.073"
+			}],
+			"createUserIdNum": "JUNIT",
+			"createDatetime": "2016-11-15 16:42:34.073"
+		},
+		{
+			"applicationRoleCode": "SPUSE",
+			"applicantSSN": "987654321",
+			"birthDate": "2017-02-13",
+			"firstName": "Susan",
+			"middleInitial": "",
+			"lastName": "Vila",
+			"birthCityName": "Miami",
+			"birthStateProvinceCode": "FL",
+			"birthCountryCode": "USA",
+			"genderCode": "M",
+			"heightInchQuantity": 70,
+			"weightQuantity": 190,
+			"conditions": [],
+			"createDatetime": "2016-11-15 16:42:34.073",
+			"applicantProducts": [{
+				"productCode": "GHI",
+				"statusDeterminationDate": "2016-11-15",
+				"statusTypeCode": "DENIED",
+				"productApproveEffectiveDate": "2016-12-12",
+				"lastUpdateUserIdNum": "JUNIT",
+				"createDatetime": "2016-11-15 16:42:34.073",
+				"lastUpdateDatetime": "2016-11-15 16:42:34.073"
+			},
+			{
+				"productCode": "JKL",
+				"statusDeterminationDate": "2016-11-15",
+				"statusTypeCode": "DENIED",
+				"productApproveEffectiveDate": "2016-11-15",
+				"lastUpdateUserIdNum": "JUNIT",
+				"createDatetime": "2016-11-15 16:42:34.073",
+				"lastUpdateDatetime": "2016-11-15 16:42:34.073"
+				}]
+		}],
+		"applicationMedicalFactors" : [{
+			"applicationRoleCode" : "ABCDE",
+			"medicalFactorQuestionCode" : "ABCDEF",
+			"medicalFactorText": "Here is the medical factor text",
+			"alternativeMedicalFactorQuestionCode" : "FEDCBA",
+			"medicalFactorIndicator" : true
+		}]
+	},
+	"employee": {
+		"createDatetime" : "2016-11-15 16:42:34.073",
+		"employerId" : 6,
+		"employeeSsn" : 123456789,
+		"communicationMethodCode" : "abc",
+		"concurrencyQuantity" : 3,
+		"createUserIdNumber" : "JUNIT"
+		}
+}

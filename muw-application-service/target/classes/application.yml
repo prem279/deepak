@@ -1,0 +1,98 @@
+spring:
+  application:
+    name: muw_application_svc
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        default_schema: MUWAPPLN_DB
+
+info:
+  app:
+    name: ${spring.application.name}
+    description: This is the LMB Core Employer MUW Application Service
+    version: 1.0.0
+
+server:
+  port: ${port:9002}
+
+management:
+  context-path: /manage
+
+endpoints:
+  health:
+    enabled: true
+    sensitive: false
+  info:
+    enabled: true
+    sensitive: false
+
+muw:
+  application:
+    database:
+      schema: MUWAPPLN_DB
+
+datasource:
+  app:
+    initial-size: 0
+    max-idle: 5
+    max-wait: 5000
+    min-evictable-idle-time-millis: 600000
+    min-idle: 0
+    time-between-eviction-runs-millis: 300000
+    validation-query: select 1 from dual
+    max-active: 15
+    test-on-borrow: true
+    
+flyway:
+  placeholders:
+    NUMBER3: NUMBER(3)
+    iforacle: 
+    ifh2: --
+  migrate: 
+    goals: migrate, validate
+
+eureka:
+  instance:
+    protocol: ${muw_application_protocol:http}
+    hostname: ${muw_application_hostname:localhost}
+    nonSecurePortEnabled: ${muw_application_non-secure-port-enabled:true}
+    nonSecurePort: ${muw_application_non-secure-port:9002}
+    securePortEnabled: ${muw_application_secure-port-enabled:false}
+    securePort: ${muw_application_secure-port:443}
+    secure-health-check-url: ${muw_application_protocol:http}://${eureka.instance.hostname}:${muw_application_port:9002}${management.context-path}/health
+    status-page-url: ${muw_application_protocol:http}://${eureka.instance.hostname}:${muw_application_port:9002}${management.context-path}/info
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${lmb_discovery_protocol:http}://username:password@${lmb_discovery_host:localhost}:${lmb_discovery_port:8761}/eureka/
+    initialInstanceInfoReplicationIntervalSeconds: 5
+    
+products:
+  productConfiguration:
+    BCL: CHILD
+    BEL: EMPLY
+    BFL: SPUSE,CHILD
+    BSL: SPUSE
+    LTD: EMPLY
+    OCL: CHILD
+    OEL: EMPLY
+    OFL: SPUSE,CHILD
+    OSL: SPUSE
+    STD: EMPLY
+    GCI: EMPLY
+    
+security:
+  config:
+    user-name-key: sub
+    authorities-key: groups
+    ldap-group-search-base: cn=Products,ou=Groups,o=Liberty,o=intranet
+    file-feed-user-ids:
+      - ci_lmbc_empr_muw_ff
+      - ci_lmbc_empr_muw_test
+    
+  oauth2:
+    resource:
+      filter-order: 3  
